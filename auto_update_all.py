@@ -9,12 +9,13 @@ date, geocode them, merge into the processed CSV, and rebuild that city's map.
 Run manually:
     python auto_update_all.py
 
-Scheduled via Task Scheduler — see setup_schedule.ps1 to install.
+Scheduled via GitHub Actions — see .github/workflows/monthly-update.yml.
 Logs written to: output/update_log.txt
 """
 
 import logging
 import sys
+import time
 from datetime import date, timedelta
 
 import pandas as pd
@@ -26,6 +27,10 @@ import gva_common
 from fetch_gva import download_gva_csv
 from geocode_census import geocode_batch
 from build_maps import build_map_for_city
+
+# Same courtesy pacing as backfill.py — GVA's anti-bot filter blocks an IP
+# after a handful of rapid automated queries.
+REQUEST_DELAY_SECONDS = 45
 
 LOG_FILE = cities.ROOT / "output" / "update_log.txt"
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -66,6 +71,7 @@ def update_city(slug: str):
     filename = f"gva_{slug}_{start.strftime('%Y%m%d')}_{today.strftime('%Y%m%d')}.csv"
     csv_path = raw_dir / filename
 
+    time.sleep(REQUEST_DELAY_SECONDS)
     download_gva_csv(cfg["gva_state"], cfg["gva_city"], start, today, csv_path, debug_dir)
 
     raw_df = pd.read_csv(csv_path, dtype=str)
