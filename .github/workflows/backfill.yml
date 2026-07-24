@@ -17,6 +17,9 @@ on:
           - cleveland
           - tucson
 
+permissions:
+  contents: write
+
 jobs:
   backfill:
     runs-on: ubuntu-latest
@@ -51,5 +54,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data output/*/maps index.html
-          git diff --staged --quiet && echo "No changes." || git commit -m "backfill: ${{ inputs.city }} $(date +'%Y-%m-%d')"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "backfill: ${{ inputs.city }} $(date +'%Y-%m-%d')"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push attempt $i failed, retrying..."
+              sleep $((RANDOM % 20 + 10))
+            done
+          fi
