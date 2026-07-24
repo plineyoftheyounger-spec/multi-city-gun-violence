@@ -1,0 +1,105 @@
+2026-07-24 16:10  ── Milwaukee (milwaukee): backfilling 2019-2026 ──
+2026-07-24 16:10  GVA query: Wisconsin/Milwaukee  01/01/2019 to 12/31/2019
+2026-07-24 16:11  Search returned: https://www.gunviolencearchive.org/query/59ba7c85-b643-4798-9abd-129ee23ad244
+2026-07-24 16:11  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=59ba7c85-b643-4798-9abd-129ee23ad244&filename=public%3A//export-ca8ecd08-b02e-4b9d-9a15-b86d1f1582fb.csv
+2026-07-24 16:11  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20190101_20191231.csv
+2026-07-24 16:11  Backfill failed for milwaukee
+Traceback (most recent call last):
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\backfill.py", line 106, in main
+    backfill_city(slug)
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\backfill.py", line 79, in backfill_city
+    year_clean = geocode_batch(year_clean, cfg["gva_city"], cfg["gva_state"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\geocode_census.py", line 72, in geocode_batch
+    input_csv = _build_input_csv(chunk, city, state)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\geocode_census.py", line 49, in _build_input_csv
+    addr = _normalize_address(row.get("address", ""))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\geocode_census.py", line 34, in _normalize_address
+    addr = (addr or "").strip()
+           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'strip'
+2026-07-24 16:11  ── Milwaukee (milwaukee): backfilling 2019-2026 ──
+2026-07-24 16:11    gva_milwaukee_20190101_20191231.csv already downloaded, reusing
+2026-07-24 16:11    Geocoding 480 addresses via Census Bureau batch API...
+2026-07-24 16:11    Geocoded 439 of 480 addresses (91% match rate)
+2026-07-24 16:11    2019: 480 incidents (41 unmapped after geocoding)
+2026-07-24 16:11  GVA query: Wisconsin/Milwaukee  01/01/2020 to 12/31/2020
+2026-07-24 16:11  Search returned: https://www.gunviolencearchive.org/query/e392b697-768b-40af-8e61-469a2404ca05
+2026-07-24 16:11  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=e392b697-768b-40af-8e61-469a2404ca05&filename=public%3A//export-f0444a1f-259b-4c39-8104-6103484d1610.csv
+2026-07-24 16:11  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20200101_20201231.csv
+2026-07-24 16:11    Geocoding 848 addresses via Census Bureau batch API...
+2026-07-24 16:12    Geocoded 789 of 848 addresses (93% match rate)
+2026-07-24 16:12    2020: 848 incidents (59 unmapped after geocoding)
+2026-07-24 16:12  GVA query: Wisconsin/Milwaukee  01/01/2021 to 12/31/2021
+2026-07-24 16:12  Search returned: https://www.gunviolencearchive.org/query/de05d541-ead1-4b94-98fb-5741b3ba0f1c
+2026-07-24 16:12  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=de05d541-ead1-4b94-98fb-5741b3ba0f1c&filename=public%3A//export-544f280a-f009-4975-a9e4-8359312fa8d3.csv
+2026-07-24 16:12  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20210101_20211231.csv
+2026-07-24 16:12    Geocoding 1,009 addresses via Census Bureau batch API...
+2026-07-24 16:12    Geocoded 956 of 1,009 addresses (95% match rate)
+2026-07-24 16:12    2021: 1,009 incidents (53 unmapped after geocoding)
+2026-07-24 16:12  GVA query: Wisconsin/Milwaukee  01/01/2022 to 12/31/2022
+2026-07-24 16:12  Search returned: https://www.gunviolencearchive.org/query/dbcb77ec-dafd-4129-8bff-7f65fa2cbee9
+2026-07-24 16:12  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=dbcb77ec-dafd-4129-8bff-7f65fa2cbee9&filename=public%3A//export-ed3a9ad1-d4ed-489d-8ae1-89a228862750.csv
+2026-07-24 16:12  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20220101_20221231.csv
+2026-07-24 16:12    Geocoding 998 addresses via Census Bureau batch API...
+2026-07-24 16:12    Geocoded 910 of 998 addresses (91% match rate)
+2026-07-24 16:12    2022: 998 incidents (88 unmapped after geocoding)
+2026-07-24 16:12  GVA query: Wisconsin/Milwaukee  01/01/2023 to 12/31/2023
+2026-07-24 16:12  Search returned: https://www.gunviolencearchive.org/query/b031a31f-7d7e-4c46-893f-f90ead7721cb
+2026-07-24 16:13  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=b031a31f-7d7e-4c46-893f-f90ead7721cb&filename=public%3A//export-deec3454-2910-400a-86e6-ffd3f2497ae8.csv
+2026-07-24 16:13  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20230101_20231231.csv
+2026-07-24 16:13    Geocoding 919 addresses via Census Bureau batch API...
+2026-07-24 16:13    Geocoded 846 of 919 addresses (92% match rate)
+2026-07-24 16:13    2023: 919 incidents (73 unmapped after geocoding)
+2026-07-24 16:13  GVA query: Wisconsin/Milwaukee  01/01/2024 to 12/31/2024
+2026-07-24 16:13  Search returned: https://www.gunviolencearchive.org/query/1f18d7b5-8efb-4ea6-9bd9-be1f8313ac0b
+2026-07-24 16:13  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=1f18d7b5-8efb-4ea6-9bd9-be1f8313ac0b&filename=public%3A//export-0b5f74ed-2ec1-4ea0-89ef-d178b813ba51.csv
+2026-07-24 16:13  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20240101_20241231.csv
+2026-07-24 16:13    Geocoding 704 addresses via Census Bureau batch API...
+2026-07-24 16:13    Geocoded 634 of 704 addresses (90% match rate)
+2026-07-24 16:13    2024: 704 incidents (70 unmapped after geocoding)
+2026-07-24 16:13  GVA query: Wisconsin/Milwaukee  01/01/2025 to 12/31/2025
+2026-07-24 16:13  Search returned: https://www.gunviolencearchive.org/query/5812c1e0-347b-42d7-a8dd-5bc1acdf98e6
+2026-07-24 16:13  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=5812c1e0-347b-42d7-a8dd-5bc1acdf98e6&filename=public%3A//export-0c44da14-7f8f-432f-aa37-3bae5879c187.csv
+2026-07-24 16:13  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20250101_20251231.csv
+2026-07-24 16:13    Geocoding 565 addresses via Census Bureau batch API...
+2026-07-24 16:13    Geocoded 507 of 565 addresses (90% match rate)
+2026-07-24 16:13    2025: 565 incidents (58 unmapped after geocoding)
+2026-07-24 16:13  GVA query: Wisconsin/Milwaukee  01/01/2026 to 07/24/2026
+2026-07-24 16:13  Search returned: https://www.gunviolencearchive.org/query/30e1683a-7721-4825-9736-6f73b2253b87
+2026-07-24 16:13  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=30e1683a-7721-4825-9736-6f73b2253b87&filename=public%3A//export-f659c569-75d9-45b5-974d-92e581390821.csv
+2026-07-24 16:13  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\raw\gva_milwaukee_20260101_20260724.csv
+2026-07-24 16:14    Geocoding 251 addresses via Census Bureau batch API...
+2026-07-24 16:14    Geocoded 233 of 251 addresses (93% match rate)
+2026-07-24 16:14    2026: 251 incidents (18 unmapped after geocoding)
+2026-07-24 16:14    Saved 5,774 total incidents -> C:\Users\Thomas\AI\multi_city_gun_violence\data\milwaukee\processed\milwaukee_incidents.csv
+2026-07-24 16:14  ── Austin (austin): backfilling 2018-2026 ──
+2026-07-24 16:14  GVA query: Texas/Austin  01/01/2018 to 12/31/2018
+2026-07-24 16:14  Search returned: https://www.gunviolencearchive.org/query/a97c5842-2b1d-4c7e-b2fe-1388f061adc9
+2026-07-24 16:14  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=a97c5842-2b1d-4c7e-b2fe-1388f061adc9&filename=public%3A//export-ee6c5176-4594-4b06-9ec4-f6ba058253c2.csv
+2026-07-24 16:14  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\austin\raw\gva_austin_20180101_20181231.csv
+2026-07-24 16:14    Geocoding 97 addresses via Census Bureau batch API...
+2026-07-24 16:14    Geocoded 80 of 97 addresses (82% match rate)
+2026-07-24 16:14    2018: 97 incidents (17 unmapped after geocoding)
+2026-07-24 16:14  GVA query: Texas/Austin  01/01/2019 to 12/31/2019
+2026-07-24 16:14  Search returned: https://www.gunviolencearchive.org/query/3ab9fd55-d04e-4d7f-8602-437060347cdd
+2026-07-24 16:14  Downloading: https://www.gunviolencearchive.org/export-finished/download?uuid=3ab9fd55-d04e-4d7f-8602-437060347cdd&filename=public%3A//export-c94d93b4-98bb-482a-9bd1-1afcdeefd5b7.csv
+2026-07-24 16:14  Saved to: C:\Users\Thomas\AI\multi_city_gun_violence\data\austin\raw\gva_austin_20190101_20191231.csv
+2026-07-24 16:14    Geocoding 113 addresses via Census Bureau batch API...
+2026-07-24 16:14    Geocoded 98 of 113 addresses (87% match rate)
+2026-07-24 16:14    2019: 113 incidents (15 unmapped after geocoding)
+2026-07-24 16:14  GVA query: Texas/Austin  01/01/2020 to 12/31/2020
+2026-07-24 16:15  Search returned: https://www.gunviolencearchive.org/query/b0e05698-f101-4088-9acf-3ce7e75af645
+2026-07-24 16:15  Debug screenshot: C:\Users\Thomas\AI\multi_city_gun_violence\output\austin\debug\export_redirect_failed_2026-07-24.png
+2026-07-24 16:15  Debug screenshot: C:\Users\Thomas\AI\multi_city_gun_violence\output\austin\debug\error_2026-07-24.png
+2026-07-24 16:15  Backfill failed for austin
+Traceback (most recent call last):
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\backfill.py", line 108, in main
+    backfill_city(slug)
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\backfill.py", line 75, in backfill_city
+    download_gva_csv(cfg["gva_state"], cfg["gva_city"], start, end, out_path, debug_dir)
+  File "C:\Users\Thomas\AI\multi_city_gun_violence\fetch_gva.py", line 73, in download_gva_csv
+    raise RuntimeError(f"Unexpected URL after export click: {page.url}")
+RuntimeError: Unexpected URL after export click: https://www.gunviolencearchive.org/batch?op=start&id=1162844

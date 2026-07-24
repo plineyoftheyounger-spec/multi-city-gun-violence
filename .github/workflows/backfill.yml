@@ -1,0 +1,55 @@
+name: Backfill City Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: 'City slug to backfill (or "all")'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - milwaukee
+          - austin
+          - miami
+          - jackson_ms
+          - cleveland
+          - tucson
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright + Chromium
+        run: python -m playwright install chromium --with-deps
+
+      - name: Run backfill
+        run: |
+          if [ "${{ inputs.city }}" = "all" ]; then
+            python backfill.py
+          else
+            python backfill.py ${{ inputs.city }}
+          fi
+
+      - name: Rebuild maps
+        run: python build_maps.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data output/*/maps index.html
+          git diff --staged --quiet && echo "No changes." || git commit -m "backfill: ${{ inputs.city }} $(date +'%Y-%m-%d')"
+          git push
