@@ -41,11 +41,16 @@ jobs:
           git add data output index.html
           if git diff --staged --quiet; then
             echo "No new data."
-          else
-            git commit -m "data: monthly GVA update $(date +'%Y-%m-%d')"
-            for i in 1 2 3 4 5; do
-              git pull --rebase origin main && git push && break
-              echo "Push attempt $i failed, retrying..."
-              sleep $((RANDOM % 20 + 10))
-            done
+            exit 0
           fi
+          git commit -m "data: monthly GVA update $(date +'%Y-%m-%d')"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 20 + 10))
+          done
+          echo "::error::All push attempts failed"
+          exit 1

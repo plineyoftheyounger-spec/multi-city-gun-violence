@@ -4,6 +4,10 @@ data/*/raw/
 # Debug screenshots from failed runs
 output/*/debug/
 
+# Log files (rewritten every run, not meaningful in history)
+output/backfill_log.txt
+output/update_log.txt
+
 # Python
 __pycache__/
 *.pyc
