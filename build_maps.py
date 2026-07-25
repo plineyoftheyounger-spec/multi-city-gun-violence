@@ -63,8 +63,12 @@ def add_legend(m, items):
     m.get_root().html.add_child(folium.Element(html))
 
 
-def dot_layer(df, name, color, show=True):
-    group = folium.FeatureGroup(name=name, show=show)
+def dot_layer(df, name, color, show=True, overlay=True):
+    # overlay=False makes Leaflet's layer control render this as a radio
+    # button (mutually exclusive) instead of a checkbox — used for the
+    # per-year layers so switching years doesn't require distinguishing
+    # overlapping colors.
+    group = folium.FeatureGroup(name=name, show=show, overlay=overlay)
     for _, row in df.iterrows():
         popup = (
             f"<b>{row['date'].strftime('%b %d, %Y')}</b><br>"
@@ -95,7 +99,10 @@ def save_map(m, slug, filename):
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def build_year_map(df, city_cfg, slug):
-    """One FeatureGroup layer per year, start_year..present, ordinal blue ramp."""
+    """One radio-button FeatureGroup layer per year, start_year..present,
+    ordinal blue ramp. Layers are mutually exclusive (overlay=False) so
+    picking a year shows only that year's dots instead of stacking every
+    year's colors on top of each other."""
     start_year = city_cfg["start_year"]
     end_year = int(df["year"].max()) if not df.empty else start_year
     years = list(range(start_year, end_year + 1))
@@ -104,7 +111,8 @@ def build_year_map(df, city_cfg, slug):
     m = base_map(city_cfg)
     for year, color in zip(years, colors):
         year_df = df[df["year"] == year]
-        dot_layer(year_df, str(year), color, show=True).add_to(m)
+        show = year == end_year
+        dot_layer(year_df, str(year), color, show=show, overlay=False).add_to(m)
 
     folium.LayerControl(collapsed=False).add_to(m)
     add_title(m, f"{city_cfg['display_name']} Gun Violence — {start_year}–Present")
