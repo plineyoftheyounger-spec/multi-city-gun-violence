@@ -47,7 +47,12 @@ jobs:
           fi
 
       - name: Rebuild maps
-        run: python build_maps.py
+        run: |
+          if [ "${{ inputs.city }}" = "all" ]; then
+            python build_maps.py
+          else
+            python build_maps.py ${{ inputs.city }}
+          fi
 
       - name: Commit results
         run: |

@@ -149,5 +149,7 @@ def build_map_for_city(slug):
 
 
 if __name__ == "__main__":
-    for slug in cities.CITIES:
+    import sys
+    slugs = sys.argv[1:] or list(cities.CITIES)
+    for slug in slugs:
         build_map_for_city(slug)
