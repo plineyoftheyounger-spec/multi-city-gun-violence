@@ -71,6 +71,20 @@ def add_legend(m, items):
     m.get_root().html.add_child(folium.Element(html))
 
 
+def _diamond_icon(color, size=11, opacity=0.85):
+    # Plain DivIcon (CSS-rotated square) instead of folium.RegularPolygonMarker,
+    # which depends on an external leaflet-dvf CDN script — if that script
+    # fails to load, the error kills every bit of JS after it in the page's
+    # single inline <script> block, including the year-selector LayerControl.
+    half = size / 2
+    html = (
+        f'<div style="width:{size}px;height:{size}px;background:{color};'
+        f'opacity:{opacity};transform:rotate(45deg);'
+        f'border:1px solid rgba(0,0,0,0.35);"></div>'
+    )
+    return folium.DivIcon(icon_size=(size, size), icon_anchor=(half, half), html=html)
+
+
 def dot_layer(df, name, color, show=True):
     group = folium.FeatureGroup(name=name, show=show)
     for _, row in df.iterrows():
@@ -81,14 +95,9 @@ def dot_layer(df, name, color, show=True):
         )
         if bool(row.get("fatal", False)):
             # Diamond for incidents with at least one death.
-            folium.RegularPolygonMarker(
+            folium.Marker(
                 location=[row["lat"], row["lon"]],
-                number_of_sides=4,
-                rotation=45,
-                radius=6,
-                color=color,
-                fill=True,
-                fill_opacity=0.78,
+                icon=_diamond_icon(color),
                 popup=folium.Popup(popup, max_width=280),
             ).add_to(group)
         else:
