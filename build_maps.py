@@ -3,9 +3,9 @@ build_maps.py
 ─────────────
 Two Folium map builders, generalized from orlando_gun_violence/04_analysis_maps.py:
 
-  build_year_map(df, city_cfg, slug)  — one togglable layer per calendar year,
-      light-to-dark ordinal blue ramp (see ordinal_ramp.py), for cities where
-      users pick their own time period.
+  build_year_map(df, city_cfg, slug)  — one togglable (checkbox, multi-select)
+      layer per calendar year, light-to-dark ordinal blue ramp (see
+      ordinal_ramp.py), for cities where users pick their own time period.
 
   build_era_map(df, city_cfg, slug)   — two togglable layers (pre/post a fixed
       cutoff date), diverging blue/red pair, for Milwaukee.
@@ -34,7 +34,7 @@ def base_map(city_cfg):
     return folium.Map(
         location=[city_cfg["lat"], city_cfg["lon"]],
         zoom_start=city_cfg["zoom"],
-        tiles="CartoDB positron",
+        tiles="CartoDB Voyager",
         prefer_canvas=True,
     )
 
@@ -50,6 +50,14 @@ def add_title(m, html_text):
     m.get_root().html.add_child(folium.Element(html))
 
 
+SHAPE_KEY_HTML = """
+<div style="margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #ccc;">
+    <div><span style="font-size:15px;">&#9670;</span>&nbsp;At least one death</div>
+    <div><span style="font-size:15px;">&#9679;</span>&nbsp;Injury only, no death</div>
+</div>
+"""
+
+
 def add_legend(m, items):
     rows = "".join(
         f'<div><span style="color:{c};font-size:18px;line-height:1.3;">●</span>&nbsp;{label}</div>'
@@ -59,30 +67,40 @@ def add_legend(m, items):
     <div style="position:fixed;bottom:30px;left:30px;background:white;
          padding:10px 14px;border-radius:6px;border:1px solid #aaa;
          z-index:1000;font-family:Arial,sans-serif;font-size:13px;
-         max-height:70vh;overflow-y:auto;">{rows}</div>"""
+         max-height:70vh;overflow-y:auto;">{SHAPE_KEY_HTML}{rows}</div>"""
     m.get_root().html.add_child(folium.Element(html))
 
 
-def dot_layer(df, name, color, show=True, overlay=True):
-    # overlay=False makes Leaflet's layer control render this as a radio
-    # button (mutually exclusive) instead of a checkbox — used for the
-    # per-year layers so switching years doesn't require distinguishing
-    # overlapping colors.
-    group = folium.FeatureGroup(name=name, show=show, overlay=overlay)
+def dot_layer(df, name, color, show=True):
+    group = folium.FeatureGroup(name=name, show=show)
     for _, row in df.iterrows():
         popup = (
             f"<b>{row['date'].strftime('%b %d, %Y')}</b><br>"
             f"{row.get('address', '')}<br>"
             f"Killed: {row['killed']} &nbsp;|&nbsp; Injured: {row['injured']}"
         )
-        folium.CircleMarker(
-            location=[row["lat"], row["lon"]],
-            radius=5,
-            color=color,
-            fill=True,
-            fill_opacity=0.72,
-            popup=folium.Popup(popup, max_width=280),
-        ).add_to(group)
+        if bool(row.get("fatal", False)):
+            # Diamond for incidents with at least one death.
+            folium.RegularPolygonMarker(
+                location=[row["lat"], row["lon"]],
+                number_of_sides=4,
+                rotation=45,
+                radius=6,
+                color=color,
+                fill=True,
+                fill_opacity=0.78,
+                popup=folium.Popup(popup, max_width=280),
+            ).add_to(group)
+        else:
+            # Circle for shootings with injuries but no death.
+            folium.CircleMarker(
+                location=[row["lat"], row["lon"]],
+                radius=5,
+                color=color,
+                fill=True,
+                fill_opacity=0.72,
+                popup=folium.Popup(popup, max_width=280),
+            ).add_to(group)
     return group
 
 
@@ -99,10 +117,10 @@ def save_map(m, slug, filename):
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def build_year_map(df, city_cfg, slug):
-    """One radio-button FeatureGroup layer per year, start_year..present,
-    ordinal blue ramp. Layers are mutually exclusive (overlay=False) so
-    picking a year shows only that year's dots instead of stacking every
-    year's colors on top of each other."""
+    """One checkbox FeatureGroup layer per year, start_year..present,
+    ordinal blue ramp. Checkboxes (not radio buttons) so multiple years can
+    be compared side by side; only the most recent year is checked by
+    default to keep the first view readable."""
     start_year = city_cfg["start_year"]
     end_year = int(df["year"].max()) if not df.empty else start_year
     years = list(range(start_year, end_year + 1))
@@ -112,7 +130,7 @@ def build_year_map(df, city_cfg, slug):
     for year, color in zip(years, colors):
         year_df = df[df["year"] == year]
         show = year == end_year
-        dot_layer(year_df, str(year), color, show=show, overlay=False).add_to(m)
+        dot_layer(year_df, str(year), color, show=show).add_to(m)
 
     folium.LayerControl(collapsed=False).add_to(m)
     add_title(m, f"{city_cfg['display_name']} Gun Violence — {start_year}–Present")
