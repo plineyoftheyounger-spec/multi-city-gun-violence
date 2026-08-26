@@ -27,6 +27,8 @@ import gva_common
 from fetch_gva import download_gva_csv
 from geocode_census import geocode_batch
 from build_maps import build_map_for_city
+from export_explorer_data import export as export_explorer_data
+from looker_export import export as export_looker_csv
 
 # Same courtesy pacing as backfill.py — GVA's anti-bot filter blocks an IP
 # after a handful of rapid automated queries.
@@ -101,6 +103,17 @@ def main():
             update_city(slug)
         except Exception:
             log.exception(f"Update failed for {slug}")
+
+    try:
+        export_explorer_data()
+    except Exception:
+        log.exception("Explorer data export failed")
+
+    try:
+        export_looker_csv()
+    except Exception:
+        log.exception("Looker CSV export failed")
+
     log.info("Multi-city GVA auto-update complete")
 
 

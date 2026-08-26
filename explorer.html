@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gun Violence Pre/Post Explorer</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  :root {
+    --pre-color: #2a78d6;
+    --post-color: #e34948;
+  }
+  html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; color: #222; }
+  #app { display: flex; height: 100%; }
+  #sidebar {
+    width: 300px; flex: 0 0 300px; box-sizing: border-box; padding: 16px;
+    background: #f7f7f8; border-right: 1px solid #ddd; overflow-y: auto;
+  }
+  #map { flex: 1 1 auto; }
+  h1 { font-size: 1.05rem; margin: 0 0 2px; }
+  p.sub { color: #777; font-size: 0.78rem; margin: 0 0 18px; }
+  label { display: block; font-size: 0.78rem; font-weight: bold; color: #555; margin: 14px 0 4px; }
+  label:first-of-type { margin-top: 0; }
+  select, input[type="date"], input[type="number"] {
+    width: 100%; box-sizing: border-box; padding: 6px 8px; font-size: 0.85rem;
+    border: 1px solid #bbb; border-radius: 4px; background: white;
+  }
+  .row { display: flex; gap: 8px; }
+  .row > div { flex: 1; }
+  .checkbox-row { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.8rem; color: #444; }
+  .checkbox-row input { width: auto; }
+  #stats { margin-top: 20px; border-top: 1px solid #ddd; padding-top: 14px; }
+  #stats h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: .04em; color: #888; margin: 0 0 10px; }
+  table.stat-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  table.stat-table th, table.stat-table td { padding: 4px 2px; text-align: right; }
+  table.stat-table th:first-child, table.stat-table td:first-child { text-align: left; }
+  table.stat-table th.pre { color: var(--pre-color); }
+  table.stat-table th.post { color: var(--post-color); }
+  table.stat-table td.delta-up { color: #b0362c; font-weight: bold; }
+  table.stat-table td.delta-down { color: #1f7a3d; font-weight: bold; }
+  .range-note { font-size: 0.72rem; color: #888; margin-top: 6px; }
+  .legend-note { font-size: 0.72rem; color: #888; margin-top: 14px; line-height: 1.5; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <h1>Pre/Post Explorer</h1>
+    <p class="sub">Gun Violence Archive data, updated monthly</p>
+
+    <label for="city">Area</label>
+    <select id="city"></select>
+
+    <label for="cutoff">Reference date (the event being studied)</label>
+    <input type="date" id="cutoff" />
+
+    <div class="row">
+      <div>
+        <label for="preDays">Pre-period (days before)</label>
+        <input type="number" id="preDays" min="1" value="180" />
+      </div>
+      <div>
+        <label for="postDays">Post-period (days after)</label>
+        <input type="number" id="postDays" min="1" value="180" />
+      </div>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="postThroughPresent" />
+      <label for="postThroughPresent" style="margin:0;font-weight:normal;">Post-period runs through most recent data instead</label>
+    </div>
+    <div class="range-note" id="rangeNote"></div>
+
+    <div id="stats">
+      <h2>Pre vs. Post</h2>
+      <table class="stat-table" id="statTable">
+        <thead>
+          <tr><th></th><th class="pre">Pre</th><th class="post">Post</th><th>Change</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="legend-note">
+      <span class="swatch" style="background:var(--pre-color);"></span>Pre-period
+      &nbsp;&nbsp;
+      <span class="swatch" style="background:var(--post-color);"></span>Post-period
+      <br />&#9670; at least one death &nbsp; &#9679; injury only
+    </div>
+  </div>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const PRE_COLOR = "#2a78d6";
+const POST_COLOR = "#e34948";
+
+let ALL = { cities: [], incidents: [] };
+let map, canvasRenderer, preLayer, postLayer;
+
+const citySel = document.getElementById("city");
+const cutoffInput = document.getElementById("cutoff");
+const preDaysInput = document.getElementById("preDays");
+const postDaysInput = document.getElementById("postDays");
+const postThroughPresent = document.getElementById("postThroughPresent");
+const rangeNote = document.getElementById("rangeNote");
+
+function parseISO(s) { return new Date(s + "T00:00:00Z"); }
+function toISO(d) { return d.toISOString().slice(0, 10); }
+function addDays(d, n) { const r = new Date(d); r.setUTCDate(r.getUTCDate() + n); return r; }
+function fmt(d) { return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }); }
+
+function initMap() {
+  map = L.map("map", { preferCanvas: true });
+  canvasRenderer = L.canvas({ padding: 0.5 });
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+    attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
+    maxZoom: 19,
+  }).addTo(map);
+  preLayer = L.layerGroup().addTo(map);
+  postLayer = L.layerGroup().addTo(map);
+}
+
+function markerFor(rec, color) {
+  const popup = `<b>${fmt(parseISO(rec.date))}</b><br>${rec.a || ""}<br>Killed: ${rec.k} &nbsp;|&nbsp; Injured: ${rec.i}`;
+  if (rec.k > 0) {
+    const icon = L.divIcon({
+      className: "",
+      iconSize: [11, 11],
+      iconAnchor: [5.5, 5.5],
+      html: `<div style="width:11px;height:11px;background:${color};opacity:0.85;transform:rotate(45deg);border:1px solid rgba(0,0,0,0.35);"></div>`,
+    });
+    return L.marker([rec.lat, rec.lon], { icon }).bindPopup(popup, { maxWidth: 280 });
+  }
+  return L.circleMarker([rec.lat, rec.lon], {
+    renderer: canvasRenderer, radius: 5, color, fill: true, fillOpacity: 0.72, weight: 1,
+  }).bindPopup(popup, { maxWidth: 280 });
+}
+
+function summarize(rows) {
+  return {
+    incidents: rows.length,
+    killed: rows.reduce((s, r) => s + r.k, 0),
+    injured: rows.reduce((s, r) => s + r.i, 0),
+    mass: rows.reduce((s, r) => s + (r.m ? 1 : 0), 0),
+  };
+}
+
+function pctDelta(pre, post) {
+  if (pre === 0) return post === 0 ? "0%" : "+∞";
+  const pct = ((post - pre) / pre) * 100;
+  return (pct >= 0 ? "+" : "") + pct.toFixed(0) + "%";
+}
+
+function renderStats(preStats, postStats) {
+  const tbody = document.querySelector("#statTable tbody");
+  const rows = [
+    ["Incidents", preStats.incidents, postStats.incidents],
+    ["Killed", preStats.killed, postStats.killed],
+    ["Injured", preStats.injured, postStats.injured],
+    ["Mass shootings", preStats.mass, postStats.mass],
+  ];
+  tbody.innerHTML = rows.map(([label, pre, post]) => {
+    const cls = post > pre ? "delta-up" : (post < pre ? "delta-down" : "");
+    return `<tr><td>${label}</td><td>${pre.toLocaleString()}</td><td>${post.toLocaleString()}</td><td class="${cls}">${pctDelta(pre, post)}</td></tr>`;
+  }).join("");
+}
+
+function currentCityRecords() {
+  const slug = citySel.value;
+  return slug === "__all__" ? ALL.incidents : ALL.incidents.filter(r => r.city === slug);
+}
+
+function update() {
+  const records = currentCityRecords();
+  const cutoff = parseISO(cutoffInput.value);
+  const preDays = Math.max(1, parseInt(preDaysInput.value, 10) || 1);
+  const postDays = Math.max(1, parseInt(postDaysInput.value, 10) || 1);
+
+  const preStart = addDays(cutoff, -preDays);
+  const preEnd = addDays(cutoff, -1);
+  const postStart = cutoff;
+  let postEnd;
+  if (postThroughPresent.checked) {
+    const maxDate = records.reduce((m, r) => { const d = parseISO(r.date); return d > m ? d : m; }, postStart);
+    postEnd = maxDate;
+    postDaysInput.disabled = true;
+  } else {
+    postEnd = addDays(cutoff, postDays - 1);
+    postDaysInput.disabled = false;
+  }
+
+  const preRows = records.filter(r => { const d = parseISO(r.date); return d >= preStart && d <= preEnd; });
+  const postRows = records.filter(r => { const d = parseISO(r.date); return d >= postStart && d <= postEnd; });
+
+  rangeNote.textContent = `Pre: ${fmt(preStart)} – ${fmt(preEnd)}  |  Post: ${fmt(postStart)} – ${fmt(postEnd)}`;
+
+  preLayer.clearLayers();
+  postLayer.clearLayers();
+  preRows.forEach(r => preLayer.addLayer(markerFor(r, PRE_COLOR)));
+  postRows.forEach(r => postLayer.addLayer(markerFor(r, POST_COLOR)));
+
+  renderStats(summarize(preRows), summarize(postRows));
+}
+
+function recenterMap() {
+  const slug = citySel.value;
+  if (slug === "__all__") {
+    map.setView([39.5, -95], 4);
+  } else {
+    const cfg = ALL.cities.find(c => c.slug === slug);
+    if (cfg) map.setView([cfg.lat, cfg.lon], cfg.zoom);
+  }
+}
+
+function populateCitySelect() {
+  const opts = [`<option value="__all__">All Cities</option>`]
+    .concat(ALL.cities.map(c => `<option value="${c.slug}">${c.name}</option>`));
+  citySel.innerHTML = opts.join("");
+}
+
+function defaultCutoff() {
+  let max = null;
+  for (const r of ALL.incidents) {
+    const d = parseISO(r.date);
+    if (max === null || d > max) max = d;
+  }
+  return max ? addDays(max, -180) : new Date();
+}
+
+// Reading these from the URL lets a specific view (city/cutoff/window) be
+// linked or embedded directly — useful as a Looker Studio "Embed URL"
+// component, since Looker's own filters can't reach inside an iframe.
+// Example: explorer.html?city=milwaukee&cutoff=2024-09-01&pre=180&post=180&embed=1
+function applyParamsFromURL() {
+  const p = new URLSearchParams(window.location.search);
+  if (p.has("city") && ALL.cities.some(c => c.slug === p.get("city"))) citySel.value = p.get("city");
+  if (p.has("cutoff")) cutoffInput.value = p.get("cutoff");
+  if (p.has("pre")) preDaysInput.value = p.get("pre");
+  if (p.has("post")) postDaysInput.value = p.get("post");
+  if (p.get("throughPresent") === "1") postThroughPresent.checked = true;
+  if (p.get("embed") === "1") document.getElementById("sidebar").style.display = "none";
+}
+
+fetch("output/explorer_data.json")
+  .then(r => r.json())
+  .then(data => {
+    ALL = data;
+    initMap();
+    populateCitySelect();
+    cutoffInput.value = toISO(defaultCutoff());
+    applyParamsFromURL();
+    recenterMap();
+    update();
+
+    citySel.addEventListener("change", () => { recenterMap(); update(); });
+    [cutoffInput, preDaysInput, postDaysInput].forEach(el => el.addEventListener("change", update));
+    postThroughPresent.addEventListener("change", update);
+  })
+  .catch(err => {
+    document.getElementById("map").innerHTML =
+      `<p style="padding:20px;color:#a00;">Could not load explorer_data.json (${err}). ` +
+      `This page needs to be served over http(s) — opening it directly as a file:// URL ` +
+      `won't work in most browsers. Run a local server (e.g. <code>python -m http.server</code>) ` +
+      `or view it via GitHub Pages.</p>`;
+  });
+</script>
+</body>
+</html>

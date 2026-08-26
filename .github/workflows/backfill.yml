@@ -54,11 +54,16 @@ jobs:
             python build_maps.py ${{ inputs.city }}
           fi
 
+      - name: Rebuild explorer data
+        run: |
+          python export_explorer_data.py
+          python looker_export.py
+
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data output/*/maps index.html
+          git add data output/*/maps output/explorer_data.json output/looker_export.csv index.html
           if git diff --staged --quiet; then
             echo "No changes."
             exit 0
