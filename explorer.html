@@ -21,14 +21,43 @@
   p.sub { color: #777; font-size: 0.78rem; margin: 0 0 18px; }
   label { display: block; font-size: 0.78rem; font-weight: bold; color: #555; margin: 14px 0 4px; }
   label:first-of-type { margin-top: 0; }
-  select, input[type="date"], input[type="number"] {
+  select {
     width: 100%; box-sizing: border-box; padding: 6px 8px; font-size: 0.85rem;
     border: 1px solid #bbb; border-radius: 4px; background: white;
   }
-  .row { display: flex; gap: 8px; }
-  .row > div { flex: 1; }
-  .checkbox-row { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.8rem; color: #444; }
-  .checkbox-row input { width: auto; }
+
+  /* Dual-handle range slider: two native <input type=range> stacked in one
+     box, track hidden on both so only the shared fill bar + thumbs show. */
+  .range-slider { position: relative; height: 22px; margin-top: 6px; }
+  .range-track-bg {
+    position: absolute; top: 9px; left: 0; right: 0; height: 4px;
+    background: #ddd; border-radius: 2px;
+  }
+  .range-track-fill { position: absolute; top: 9px; height: 4px; border-radius: 2px; }
+  #preSlider .range-track-fill { background: var(--pre-color); }
+  #postSlider .range-track-fill { background: var(--post-color); }
+  .range-input {
+    position: absolute; top: 0; left: 0; width: 100%; height: 22px; margin: 0;
+    background: transparent; pointer-events: none;
+    -webkit-appearance: none; appearance: none;
+  }
+  .range-input::-webkit-slider-runnable-track { background: transparent; }
+  .range-input::-webkit-slider-thumb {
+    pointer-events: all; -webkit-appearance: none; appearance: none;
+    width: 15px; height: 15px; border-radius: 50%; background: white;
+    cursor: pointer; margin-top: 0; box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+  }
+  .range-input::-moz-range-track { background: transparent; border: none; }
+  .range-input::-moz-range-thumb {
+    pointer-events: all; width: 15px; height: 15px; border-radius: 50%;
+    background: white; cursor: pointer; box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+  }
+  #preSlider .range-input::-webkit-slider-thumb,
+  #preSlider .range-input::-moz-range-thumb { border: 2px solid var(--pre-color); }
+  #postSlider .range-input::-webkit-slider-thumb,
+  #postSlider .range-input::-moz-range-thumb { border: 2px solid var(--post-color); }
+  .range-labels { display: flex; justify-content: space-between; font-size: 0.74rem; color: #555; margin-top: 4px; }
+
   #stats { margin-top: 20px; border-top: 1px solid #ddd; padding-top: 14px; }
   #stats h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: .04em; color: #888; margin: 0 0 10px; }
   table.stat-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
@@ -38,7 +67,6 @@
   table.stat-table th.post { color: var(--post-color); }
   table.stat-table td.delta-up { color: #b0362c; font-weight: bold; }
   table.stat-table td.delta-down { color: #1f7a3d; font-weight: bold; }
-  .range-note { font-size: 0.72rem; color: #888; margin-top: 6px; }
   .legend-note { font-size: 0.72rem; color: #888; margin-top: 14px; line-height: 1.5; }
   .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 </style>
@@ -52,24 +80,23 @@
     <label for="city">Area</label>
     <select id="city"></select>
 
-    <label for="cutoff">Reference date (the event being studied)</label>
-    <input type="date" id="cutoff" />
+    <label>Pre-period</label>
+    <div class="range-slider" id="preSlider">
+      <div class="range-track-bg"></div>
+      <div class="range-track-fill" id="preFill"></div>
+      <input type="range" class="range-input" id="preMin" />
+      <input type="range" class="range-input" id="preMax" />
+    </div>
+    <div class="range-labels"><span id="preStartLabel"></span><span id="preEndLabel"></span></div>
 
-    <div class="row">
-      <div>
-        <label for="preDays">Pre-period (days before)</label>
-        <input type="number" id="preDays" min="1" value="180" />
-      </div>
-      <div>
-        <label for="postDays">Post-period (days after)</label>
-        <input type="number" id="postDays" min="1" value="180" />
-      </div>
+    <label>Post-period</label>
+    <div class="range-slider" id="postSlider">
+      <div class="range-track-bg"></div>
+      <div class="range-track-fill" id="postFill"></div>
+      <input type="range" class="range-input" id="postMin" />
+      <input type="range" class="range-input" id="postMax" />
     </div>
-    <div class="checkbox-row">
-      <input type="checkbox" id="postThroughPresent" />
-      <label for="postThroughPresent" style="margin:0;font-weight:normal;">Post-period runs through most recent data instead</label>
-    </div>
-    <div class="range-note" id="rangeNote"></div>
+    <div class="range-labels"><span id="postStartLabel"></span><span id="postEndLabel"></span></div>
 
     <div id="stats">
       <h2>Pre vs. Post</h2>
@@ -98,18 +125,26 @@ const POST_COLOR = "#e34948";
 
 let ALL = { cities: [], incidents: [] };
 let map, canvasRenderer, preLayer, postLayer;
+let DATA_MIN_DATE, DATA_MAX_DATE, TOTAL_DAYS;
 
 const citySel = document.getElementById("city");
-const cutoffInput = document.getElementById("cutoff");
-const preDaysInput = document.getElementById("preDays");
-const postDaysInput = document.getElementById("postDays");
-const postThroughPresent = document.getElementById("postThroughPresent");
-const rangeNote = document.getElementById("rangeNote");
+const preMin = document.getElementById("preMin");
+const preMax = document.getElementById("preMax");
+const postMin = document.getElementById("postMin");
+const postMax = document.getElementById("postMax");
+const preFill = document.getElementById("preFill");
+const postFill = document.getElementById("postFill");
+const preStartLabel = document.getElementById("preStartLabel");
+const preEndLabel = document.getElementById("preEndLabel");
+const postStartLabel = document.getElementById("postStartLabel");
+const postEndLabel = document.getElementById("postEndLabel");
 
 function parseISO(s) { return new Date(s + "T00:00:00Z"); }
 function toISO(d) { return d.toISOString().slice(0, 10); }
 function addDays(d, n) { const r = new Date(d); r.setUTCDate(r.getUTCDate() + n); return r; }
 function fmt(d) { return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }); }
+function dateFromIndex(i) { return addDays(DATA_MIN_DATE, i); }
+function indexFromDate(d) { return Math.round((d - DATA_MIN_DATE) / 86400000); }
 
 function initMap() {
   map = L.map("map", { preferCanvas: true });
@@ -172,29 +207,46 @@ function currentCityRecords() {
   return slug === "__all__" ? ALL.incidents : ALL.incidents.filter(r => r.city === slug);
 }
 
+// Dual-handle slider: two overlapping <input type=range> sharing one track.
+// Each holds a day-index into [0, TOTAL_DAYS], mapped to a real date via
+// DATA_MIN_DATE. Handles can't cross — dragging one past the other pushes it.
+function setupDualSlider(minEl, maxEl, fillEl) {
+  minEl.min = maxEl.min = 0;
+  minEl.max = maxEl.max = TOTAL_DAYS;
+
+  function clampAndRender() {
+    let lo = parseInt(minEl.value, 10);
+    let hi = parseInt(maxEl.value, 10);
+    if (lo > hi) { lo = hi; minEl.value = lo; }
+    fillEl.style.left = (lo / TOTAL_DAYS * 100) + "%";
+    fillEl.style.width = ((hi - lo) / TOTAL_DAYS * 100) + "%";
+  }
+  minEl.addEventListener("input", clampAndRender);
+  maxEl.addEventListener("input", () => {
+    let lo = parseInt(minEl.value, 10);
+    let hi = parseInt(maxEl.value, 10);
+    if (hi < lo) { hi = lo; maxEl.value = hi; }
+    clampAndRender();
+  });
+  return clampAndRender;
+}
+
+function sliderRange(minEl, maxEl) {
+  return [dateFromIndex(parseInt(minEl.value, 10)), dateFromIndex(parseInt(maxEl.value, 10))];
+}
+
 function update() {
   const records = currentCityRecords();
-  const cutoff = parseISO(cutoffInput.value);
-  const preDays = Math.max(1, parseInt(preDaysInput.value, 10) || 1);
-  const postDays = Math.max(1, parseInt(postDaysInput.value, 10) || 1);
+  const [preStart, preEnd] = sliderRange(preMin, preMax);
+  const [postStart, postEnd] = sliderRange(postMin, postMax);
 
-  const preStart = addDays(cutoff, -preDays);
-  const preEnd = addDays(cutoff, -1);
-  const postStart = cutoff;
-  let postEnd;
-  if (postThroughPresent.checked) {
-    const maxDate = records.reduce((m, r) => { const d = parseISO(r.date); return d > m ? d : m; }, postStart);
-    postEnd = maxDate;
-    postDaysInput.disabled = true;
-  } else {
-    postEnd = addDays(cutoff, postDays - 1);
-    postDaysInput.disabled = false;
-  }
+  preStartLabel.textContent = fmt(preStart);
+  preEndLabel.textContent = fmt(preEnd);
+  postStartLabel.textContent = fmt(postStart);
+  postEndLabel.textContent = fmt(postEnd);
 
   const preRows = records.filter(r => { const d = parseISO(r.date); return d >= preStart && d <= preEnd; });
   const postRows = records.filter(r => { const d = parseISO(r.date); return d >= postStart && d <= postEnd; });
-
-  rangeNote.textContent = `Pre: ${fmt(preStart)} – ${fmt(preEnd)}  |  Post: ${fmt(postStart)} – ${fmt(postEnd)}`;
 
   preLayer.clearLayers();
   postLayer.clearLayers();
@@ -220,26 +272,30 @@ function populateCitySelect() {
   citySel.innerHTML = opts.join("");
 }
 
-function defaultCutoff() {
-  let max = null;
+function computeDataRange() {
+  let min = null, max = null;
   for (const r of ALL.incidents) {
     const d = parseISO(r.date);
+    if (min === null || d < min) min = d;
     if (max === null || d > max) max = d;
   }
-  return max ? addDays(max, -180) : new Date();
+  DATA_MIN_DATE = min || new Date();
+  DATA_MAX_DATE = max || new Date();
+  TOTAL_DAYS = Math.round((DATA_MAX_DATE - DATA_MIN_DATE) / 86400000);
 }
 
-// Reading these from the URL lets a specific view (city/cutoff/window) be
-// linked or embedded directly — useful as a Looker Studio "Embed URL"
-// component, since Looker's own filters can't reach inside an iframe.
-// Example: explorer.html?city=milwaukee&cutoff=2024-09-01&pre=180&post=180&embed=1
+// Reading these from the URL lets a specific view (city + exact pre/post
+// dates) be linked or embedded directly — useful as a Looker Studio
+// "Embed URL" component, since Looker's own filters can't reach inside an
+// iframe. Example:
+// explorer.html?city=milwaukee&preStart=2024-03-01&preEnd=2024-08-31&postStart=2024-09-01&postEnd=2025-02-28&embed=1
 function applyParamsFromURL() {
   const p = new URLSearchParams(window.location.search);
   if (p.has("city") && ALL.cities.some(c => c.slug === p.get("city"))) citySel.value = p.get("city");
-  if (p.has("cutoff")) cutoffInput.value = p.get("cutoff");
-  if (p.has("pre")) preDaysInput.value = p.get("pre");
-  if (p.has("post")) postDaysInput.value = p.get("post");
-  if (p.get("throughPresent") === "1") postThroughPresent.checked = true;
+  if (p.has("preStart")) preMin.value = indexFromDate(parseISO(p.get("preStart")));
+  if (p.has("preEnd")) preMax.value = indexFromDate(parseISO(p.get("preEnd")));
+  if (p.has("postStart")) postMin.value = indexFromDate(parseISO(p.get("postStart")));
+  if (p.has("postEnd")) postMax.value = indexFromDate(parseISO(p.get("postEnd")));
   if (p.get("embed") === "1") document.getElementById("sidebar").style.display = "none";
 }
 
@@ -249,14 +305,26 @@ fetch("output/explorer_data.json")
     ALL = data;
     initMap();
     populateCitySelect();
-    cutoffInput.value = toISO(defaultCutoff());
+    computeDataRange();
+
+    const renderPreFill = setupDualSlider(preMin, preMax, preFill);
+    const renderPostFill = setupDualSlider(postMin, postMax, postFill);
+
+    // Default: two adjacent ~180-day windows ending at the most recent data,
+    // mirroring what a first-time viewer probably wants to compare.
+    preMin.value = indexFromDate(addDays(DATA_MAX_DATE, -360));
+    preMax.value = indexFromDate(addDays(DATA_MAX_DATE, -181));
+    postMin.value = indexFromDate(addDays(DATA_MAX_DATE, -180));
+    postMax.value = indexFromDate(DATA_MAX_DATE);
+
     applyParamsFromURL();
+    renderPreFill();
+    renderPostFill();
     recenterMap();
     update();
 
     citySel.addEventListener("change", () => { recenterMap(); update(); });
-    [cutoffInput, preDaysInput, postDaysInput].forEach(el => el.addEventListener("change", update));
-    postThroughPresent.addEventListener("change", update);
+    [preMin, preMax, postMin, postMax].forEach(el => el.addEventListener("input", update));
   })
   .catch(err => {
     document.getElementById("map").innerHTML =

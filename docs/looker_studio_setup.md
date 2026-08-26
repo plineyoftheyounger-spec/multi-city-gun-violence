@@ -27,21 +27,21 @@ Section 3 below adds calculated fields that convert them to 0/1 first.
 
 1. In Looker Studio, **Create > Data source > Google Sheets**, pick the
    sheet, confirm the header row.
-2. Create three **Parameters** (data source Edit view > Add a Parameter,
-   top right):
-   - `Cutoff Date` — Date, default e.g. `2024-09-01`
-   - `Pre Window Days` — Number, default `180`
-   - `Post Window Days` — Number, default `180`
+2. Create four **Parameters** (data source Edit view > Add a Parameter, top
+   right) — matching `explorer.html`'s model of picking exact dates rather
+   than a cutoff + day counts:
+   - `Pre Start` — Date
+   - `Pre End` — Date
+   - `Post Start` — Date
+   - `Post End` — Date
 3. Add these **Calculated Fields** on the data source:
    - `Fatal Flag` = `CASE WHEN Fatal Incident = "True" THEN 1 ELSE 0 END`
    - `Mass Shooting Flag` = `CASE WHEN Mass Shooting = "True" THEN 1 ELSE 0 END`
    - `Period` =
      ```
      CASE
-       WHEN Date >= DATE_ADD(Cutoff Date, Pre Window Days * -1)
-            AND Date < Cutoff Date THEN "Pre"
-       WHEN Date >= Cutoff Date
-            AND Date <= DATE_ADD(Cutoff Date, Post Window Days) THEN "Post"
+       WHEN Date >= Pre Start AND Date <= Pre End THEN "Pre"
+       WHEN Date >= Post Start AND Date <= Post End THEN "Post"
      END
      ```
      Rows outside both windows come back `NULL` — filter charts to
@@ -54,10 +54,13 @@ These are what let a practitioner change the window **without edit access**
 to the report — Looker Studio parameter controls are per-viewer, not saved
 back to the report.
 
-- **Insert > Control > Date picker** bound to `Cutoff Date`.
-- **Insert > Control > Input box / Slider** bound to `Pre Window Days` and
-  `Post Window Days` (a slider with a sane range, e.g. 30–730, reads easier
-  than free-text for most people).
+- **Insert > Control > Date Range Control**, one bound to the
+  `Pre Start`/`Pre End` parameter pair and a second bound to
+  `Post Start`/`Post End` — this is Looker's closest equivalent to the two
+  sliders in `explorer.html` (drag both ends of a single range instead of
+  two separate date pickers). If your Looker Studio version doesn't offer
+  parameter-bound range controls, fall back to four individual **Date
+  picker** controls, one per parameter.
 - **Insert > Control > Drop-down list** on the `City` dimension, "(All)"
   included, for area selection.
 
@@ -86,14 +89,14 @@ or a fatal/injury glyph distinction — that's what `explorer.html` is for.
 Add it via **Insert > Embed URL**, pointing at a specific, shareable view:
 
 ```
-https://<your-username>.github.io/multi-city-gun-violence/explorer.html?city=milwaukee&cutoff=2024-09-01&pre=180&post=180&embed=1
+https://<your-username>.github.io/multi-city-gun-violence/explorer.html?city=milwaukee&preStart=2024-03-01&preEnd=2024-08-31&postStart=2024-09-01&postEnd=2025-02-28&embed=1
 ```
 
 - `embed=1` hides the sidebar controls so the iframe is just the map —
   useful since Looker already has its own filter controls around it.
 - **This URL is static.** Looker's own Parameter/filter controls do *not*
-  reach inside the iframe — changing the Cutoff Date control in Looker will
-  not move the embedded map. If you want a specific combination visible,
+  reach inside the iframe — changing the Pre/Post Date Range controls in
+  Looker will not move the embedded map. If you want a specific combination visible,
   set it in the URL's query string; if you want viewers to explore freely,
   drop `embed=1` and link to the full `explorer.html` instead of embedding it.
 - This requires a public HTTPS URL, which means **GitHub Pages needs to be
