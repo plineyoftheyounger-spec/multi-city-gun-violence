@@ -28,8 +28,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1081614,2018-03-27,Arizona,Tucson,E Alvord Rd and S Jeanette Blvd,1,0,0,0,0,,32.144953010865,-110.954099793066,2018,3,1,True,False
 1080005,2018-03-28,Arizona,Tucson,4750 S Campbell Ave,0,0,0,1,1,,32.165607176503,-110.943446211141,2018,3,0,False,False
 1085608,2018-04-04,Arizona,Tucson,1300 block of N Falcon Ridge Dr,0,0,0,1,0,,32.238026931505,-111.014373787183,2018,4,0,False,False
-1086353,2018-04-06,Arizona,Tucson,8100 block of E 20th St,1,1,0,0,1,,32.21060687206,-110.818571878175,2018,4,2,True,False
 1632777,2018-04-06,Arizona,Tucson,W 20th St and S Farmington Rd,1,0,0,0,0,,,,2018,4,1,True,False
+1086353,2018-04-06,Arizona,Tucson,8100 block of E 20th St,1,1,0,0,1,,32.21060687206,-110.818571878175,2018,4,2,True,False
 1088692,2018-04-10,Arizona,Tucson,850 E Fort Lowell Rd,0,0,1,0,0,,32.264777391592,-110.958829160981,2018,4,0,False,False
 1091923,2018-04-13,Arizona,Tucson,4400 block of S 6th Ave,0,0,0,1,0,,32.172182535792,-110.968282559213,2018,4,0,False,False
 1096019,2018-04-18,Arizona,Tucson,6555 E Speedway Blvd,1,0,0,0,2,,32.235635934934,-110.852403085986,2018,4,1,True,False
@@ -102,8 +102,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1353033,2019-03-22,Arizona,Tucson,Fontana Ave and Fort Lowell Rd,0,0,0,1,0,,32.264769994161,-110.967739282527,2019,3,0,False,False
 1358019,2019-03-26,Arizona,Tucson,5051 W Overton Rd,0,0,0,0,1,,32.373919776699,-111.072656564045,2019,3,0,False,False
 1358346,2019-03-28,Arizona,Tucson,2500 block of North Dodge Blvd,0,1,0,0,0,,32.252038876998,-110.913987247699,2019,3,1,False,False
-1361110,2019-04-01,Arizona,Tucson,N El Tovar Ave,0,1,0,0,0,,,,2019,4,1,False,False
 1361103,2019-04-01,Arizona,Tucson,E Limberlost Dr and N 1st Ave,0,1,0,0,0,,32.282976991213,-110.961070282661,2019,4,1,False,False
+1361110,2019-04-01,Arizona,Tucson,N El Tovar Ave,0,1,0,0,0,,,,2019,4,1,False,False
 1363489,2019-04-04,Arizona,Tucson,2462 W Kessler Pl,2,0,0,0,1,,32.297245287648,-111.019945807285,2019,4,2,True,False
 1365154,2019-04-06,Arizona,Tucson,W Drexel Rd and S Midvale Park Rd,0,0,0,0,0,,32.148337012473,-110.99879828393,2019,4,0,False,False
 1365373,2019-04-07,Arizona,Tucson,E Bilby Rd and Morris Blvd,0,1,0,0,0,,32.141335011568,-110.957902292542,2019,4,1,False,False
@@ -148,8 +148,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1524917,2019-10-11,Arizona,Tucson,5700 block of E Eastland St,0,0,1,0,0,,32.211306701657,-110.87153077944,2019,10,0,False,False
 1525553,2019-10-12,Arizona,Tucson,5689 E 22nd St,0,1,0,0,0,,32.206978441247,-110.871083637713,2019,10,1,False,False
 1527927,2019-10-16,Arizona,Tucson,4647 E Duncan St,0,0,2,0,0,,32.248861288649,-110.893554575036,2019,10,0,False,False
-1535636,2019-10-26,Arizona,Tucson,N Fontana Ave and E Navajo Rd,0,1,0,0,0,,32.266587993899,-110.967752782405,2019,10,1,False,False
 1538092,2019-10-26,Arizona,Tucson,5200 block of S Via Noche Buena,1,0,0,0,3,,32.157773787096,-110.930145364961,2019,10,1,True,False
+1535636,2019-10-26,Arizona,Tucson,N Fontana Ave and E Navajo Rd,0,1,0,0,0,,32.266587993899,-110.967752782405,2019,10,1,False,False
 1537325,2019-10-28,Arizona,Tucson,,0,1,0,0,0,,,,2019,10,1,False,False
 1548747,2019-11-13,Arizona,Tucson,243 E Speedway Blvd,0,0,0,0,0,,32.235964294024,-110.967712642781,2019,11,0,False,False
 1549982,2019-11-15,Arizona,Tucson,1742 W Ruthrauff Rd,0,0,0,0,2,,32.289535216804,-111.003137288542,2019,11,0,False,False
@@ -237,8 +237,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1802286,2020-09-19,Arizona,Tucson,300 block of W Valencia Rd,1,0,0,0,1,,32.13406630905,-110.973445450838,2020,9,1,True,False
 1803852,2020-09-20,Arizona,Tucson,2300 block of E Monterey Vista,1,0,0,0,0,,32.191506707647,-110.937710066134,2020,9,1,True,False
 1820162,2020-10-01,Arizona,Tucson,2522 N Estrella Ave,1,0,0,0,1,,32.252784947572,-110.969708517705,2020,10,1,True,False
-1865223,2020-10-03,Arizona,Tucson,,1,0,0,0,0,,,,2020,10,1,True,False
 1813802,2020-10-03,Arizona,Tucson,7406 S Camino De Oeste,0,0,0,0,1,,32.116910315055,-111.063201816655,2020,10,0,False,False
+1865223,2020-10-03,Arizona,Tucson,,1,0,0,0,0,,,,2020,10,1,True,False
 1814256,2020-10-04,Arizona,Tucson,6821 E Broadway Blvd,1,0,0,0,0,,32.221087290431,-110.846019035322,2020,10,1,True,False
 1817419,2020-10-07,Arizona,Tucson,,0,0,0,0,0,,,,2020,10,0,False,False
 1822276,2020-10-12,Arizona,Tucson,1200 W Blue Aloe St,0,1,0,0,1,,,,2020,10,1,False,False
@@ -253,8 +253,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1860240,2020-11-15,Arizona,Tucson,3000 block of E Via Genovesa,1,0,0,0,1,,32.151159713036,-110.927900102052,2020,11,1,True,False
 1854532,2020-11-16,Arizona,Tucson,1000 N Stone Ave,0,1,0,0,0,,32.234272294458,-110.971717048292,2020,11,1,False,False
 1858192,2020-11-19,Arizona,Tucson,6000 block of N Pontatoc Rd,1,0,1,0,0,,32.314920740128,-110.900232114147,2020,11,1,True,False
-1858186,2020-11-20,Arizona,Tucson,800 block of N Camino Santiago,1,0,0,0,1,,32.232726363453,-111.007598077587,2020,11,1,True,False
 1858075,2020-11-20,Arizona,Tucson,300 block of W Missouri Ave,1,0,0,0,2,,32.166934304302,-110.973773973039,2020,11,1,True,False
+1858186,2020-11-20,Arizona,Tucson,800 block of N Camino Santiago,1,0,0,0,1,,32.232726363453,-111.007598077587,2020,11,1,True,False
 1857900,2020-11-21,Arizona,Tucson,10701 N Poinsettia Dr,0,0,1,0,0,,32.400518717371,-110.98561895687,2020,11,0,False,False
 1859036,2020-11-21,Arizona,Tucson,Stone Ave and River Rd,0,1,0,0,0,,32.296233989778,-110.971172779773,2020,11,1,False,False
 1859197,2020-11-21,Arizona,Tucson,W Anklam Rd,0,2,0,0,0,,,,2020,11,2,False,False
@@ -267,9 +267,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1867155,2020-12-02,Arizona,Tucson,W Bopp Rd and S Deaver Rd,0,0,0,0,0,,32.177254013707,-111.113912759126,2020,12,0,False,False
 1871868,2020-12-07,Arizona,Tucson,2345 E Irvington Rd,0,1,0,0,0,,32.163299652489,-110.937590684102,2020,12,1,False,False
 1880681,2020-12-16,Arizona,Tucson,6900 block of S Avenida del Abrazo,0,0,1,0,0,,,,2020,12,0,False,False
+1881791,2020-12-19,Arizona,Tucson,10997 E Palmetto Pointe Trl,1,0,1,0,0,,32.15151316155,-110.757772657766,2020,12,1,True,False
 1881806,2020-12-19,Arizona,Tucson,6301 S Park Ave,1,0,0,0,2,,32.137641716323,-110.956151629467,2020,12,1,True,False
 1881808,2020-12-19,Arizona,Tucson,W Swisher Pl and W Gaffer Pl,0,1,0,0,1,,32.141776013463,-110.999648784186,2020,12,1,False,False
-1881791,2020-12-19,Arizona,Tucson,10997 E Palmetto Pointe Trl,1,0,1,0,0,,32.15151316155,-110.757772657766,2020,12,1,True,False
 1882177,2020-12-20,Arizona,Tucson,2000 block of W Irvington Pl,0,1,0,0,0,,32.16316322924,-111.009999106111,2020,12,1,False,False
 1884134,2020-12-20,Arizona,Tucson,E Mossman Rd and S Jeanette Blvd,1,1,0,0,0,,32.143144011127,-110.954090793185,2020,12,2,True,False
 1885262,2020-12-23,Arizona,Tucson,200 block of W Blacklidge Dr,1,0,0,0,1,,32.261272290674,-110.974264537035,2020,12,1,True,False
@@ -416,8 +416,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2221743,2022-01-27,Arizona,Tucson,3900 block of E Blue Moon Trail,1,1,0,0,1,,32.498107925509,-110.90974946843,2022,1,2,True,False
 2225015,2022-02-01,Arizona,Tucson,5890 E Broadway Blvd,1,0,0,0,1,,32.221503325402,-110.865441025373,2022,2,1,True,False
 2225531,2022-02-02,Arizona,Tucson,350 S Harrison Rd,0,0,0,0,0,,32.216830677299,-110.789807391815,2022,2,0,False,False
-2228327,2022-02-05,Arizona,Tucson,1600 block of S Palm Springs Cir,0,1,0,0,0,,32.201523699687,-110.799578609147,2022,2,1,False,False
 2228332,2022-02-05,Arizona,Tucson,2600 block of N Alvernon Way,1,0,0,0,1,,32.254280212743,-110.909685655098,2022,2,1,True,False
+2228327,2022-02-05,Arizona,Tucson,1600 block of S Palm Springs Cir,0,1,0,0,0,,32.201523699687,-110.799578609147,2022,2,1,False,False
 2228337,2022-02-06,Arizona,Tucson,2496 S Rose Peak Dr,1,0,1,0,0,,32.193081701734,-110.816985972536,2022,2,1,True,False
 2229556,2022-02-07,Arizona,Tucson,N Travel Center Dr and W Joyner Rd,1,0,0,0,0,,,,2022,2,1,True,False
 2228476,2022-02-07,Arizona,Tucson,4800 block of Speedway Blvd,0,1,0,0,0,,32.236146698946,-110.890397562926,2022,2,1,False,False
@@ -446,8 +446,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2291709,2022-04-30,Arizona,Tucson,1000 block of W Miracle Mile,1,0,0,0,1,,32.261171748573,-110.988044559398,2022,4,1,True,False
 2293940,2022-05-02,Arizona,Tucson,100 block of W Kentucky St,1,0,0,0,3,,32.164297304471,-110.969246972155,2022,5,1,True,False
 2293568,2022-05-03,Arizona,Tucson,5301 E Glenn St,2,0,1,0,0,,32.257969286639,-110.878961857858,2022,5,2,True,False
-2299197,2022-05-11,Arizona,Tucson,10 W Fort Lowell Rd,1,0,0,0,1,,32.264800290066,-110.972188862724,2022,5,1,True,False
 2300270,2022-05-11,Arizona,Tucson,3900 block of S Corte Rana Rica,0,1,0,0,1,,,,2022,5,1,False,False
+2299197,2022-05-11,Arizona,Tucson,10 W Fort Lowell Rd,1,0,0,0,1,,32.264800290066,-110.972188862724,2022,5,1,True,False
 2303941,2022-05-14,Arizona,Tucson,3700 block of W Brambly Pl,0,1,0,0,0,,32.328988357745,-111.044792955962,2022,5,1,False,False
 2308077,2022-05-20,Arizona,Tucson,6300 S Headley Rd,0,0,1,0,2,,32.138633438182,-111.005643805811,2022,5,0,False,False
 2308079,2022-05-21,Arizona,Tucson,350 E Congress St,0,3,0,0,1,,32.222015308726,-110.966678436251,2022,5,3,False,False
@@ -461,8 +461,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2329340,2022-06-11,Arizona,Tucson,6200 block of E Pima St,1,0,0,0,0,,32.243318273728,-110.860105288172,2022,6,1,True,False
 2328364,2022-06-11,Arizona,Tucson,W 30th St and S 8th Ave,0,1,0,0,0,,32.198593003912,-110.971510286104,2022,6,1,False,False
 2329888,2022-06-11,Arizona,Tucson,400 block of E Prince Rd,0,1,2,0,0,,32.271986141228,-110.965568353091,2022,6,1,False,False
-2330120,2022-06-12,Arizona,Tucson,6200 block of E Pima St,1,0,0,0,0,,32.243318273728,-110.860105288172,2022,6,1,True,False
 2331048,2022-06-12,Arizona,Tucson,9700 block of S Oak Canyon Ln,2,0,0,0,0,,32.074318021119,-110.93062376753,2022,6,2,True,False
+2330120,2022-06-12,Arizona,Tucson,6200 block of E Pima St,1,0,0,0,0,,32.243318273728,-110.860105288172,2022,6,1,True,False
 2337785,2022-06-22,Arizona,Tucson,S Linda Ave and W Congress St,0,0,1,0,0,,32.220472001329,-110.983853782213,2022,6,0,False,False
 2339344,2022-06-23,Arizona,Tucson,101 W Irvington Rd,0,1,0,0,0,,32.163192629748,-110.970382642488,2022,6,1,False,False
 2341130,2022-06-25,Arizona,Tucson,12th Ave and Calle Margarita,0,1,0,0,0,,32.139535012754,-110.977616788725,2022,6,1,False,False
@@ -535,8 +535,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2513647,2023-01-28,Arizona,Tucson,Diamond St Loop,1,0,0,0,0,,,,2023,1,1,True,False
 2513649,2023-01-28,Arizona,Tucson,3555 N Oracle Rd,0,1,0,0,0,,32.271246932537,-110.978259479389,2023,1,1,False,False
 2518344,2023-02-05,Arizona,Tucson,4000 block of E Agate Knoll Dr,1,3,0,0,1,,32.127753867966,-110.906222305512,2023,2,4,True,True
-2525109,2023-02-14,Arizona,Tucson,N Kolb Rd and E 29th St,0,0,0,1,0,,32.199015997699,-110.84095631216,2023,2,0,False,False
 2650514,2023-02-14,Arizona,Tucson,,0,1,0,0,1,,,,2023,2,1,False,False
+2525109,2023-02-14,Arizona,Tucson,N Kolb Rd and E 29th St,0,0,0,1,0,,32.199015997699,-110.84095631216,2023,2,0,False,False
 2528010,2023-02-17,Arizona,Tucson,Stone Ave and Fort Lowell Rd,0,1,0,0,0,,32.264742994369,-110.97204128167,2023,2,1,False,False
 2529281,2023-02-18,Arizona,Tucson,1700 block of E Helen St,0,1,0,0,0,,32.237280701442,-110.946688050762,2023,2,1,False,False
 2530552,2023-02-20,Arizona,Tucson,100 block of E Mohave Rd,0,1,0,0,0,,32.267913247041,-110.970571378803,2023,2,1,False,False
@@ -594,8 +594,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2660271,2023-07-21,Arizona,Tucson,100 block of W 36th St,0,0,1,0,0,,32.192457499537,-110.969970471633,2023,7,0,False,False
 2667990,2023-07-27,Arizona,Tucson,1400 block of N Columbus Blvd,1,0,0,0,1,,32.239870533317,-110.901112346378,2023,7,1,True,False
 2676055,2023-07-28,Arizona,Tucson,501 W Irvington Rd,0,1,0,0,0,,32.163156713578,-110.976442470031,2023,7,1,False,False
-2670879,2023-07-30,Arizona,Tucson,N 1st Ave and E Speedway Blvd,0,1,0,0,0,,32.235978998007,-110.961034285752,2023,7,1,False,False
 2667053,2023-07-30,Arizona,Tucson,S Nogales Hwy and Aerospace Pkwy,1,2,0,0,0,,,,2023,7,3,True,False
+2670879,2023-07-30,Arizona,Tucson,N 1st Ave and E Speedway Blvd,0,1,0,0,0,,32.235978998007,-110.961034285752,2023,7,1,False,False
 2670887,2023-08-02,Arizona,Tucson,S 12th Ave and W Ajo Way,0,1,0,0,0,,32.177803007208,-110.977571786249,2023,8,1,False,False
 2670867,2023-08-02,Arizona,Tucson,E Bilby Rd and S Southland Blvd,1,1,0,0,0,,32.141335011649,-110.959621292199,2023,8,2,True,False
 2672116,2023-08-03,Arizona,Tucson,8201 E Stella Rd,1,0,1,0,0,,32.184538294356,-110.816629717762,2023,8,1,True,False
@@ -607,9 +607,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2691854,2023-08-26,Arizona,Tucson,700 block of W Miracle Mile,0,2,0,0,0,,32.165449305592,-110.996629467474,2023,8,2,False,False
 2703876,2023-09-10,Arizona,Tucson,N 1st Ave and E Wetmore Rd,1,0,0,0,3,,32.28660399069,-110.961092782418,2023,9,1,True,False
 2704717,2023-09-11,Arizona,Tucson,5051 E 29th St,0,1,0,0,0,,32.199750868845,-110.885120148372,2023,9,1,False,False
-2710586,2023-09-18,Arizona,Tucson,S Fremont Ave and E Calle Nevada,2,0,0,0,2,,32.162341008389,-110.955049291748,2023,9,2,True,False
 2709219,2023-09-18,Arizona,Tucson,1000 block of E 22nd St,0,1,0,0,0,,32.206833706223,-110.954599073856,2023,9,1,False,False
 2710541,2023-09-18,Arizona,Tucson,S Kolb Rd and E 22nd St,0,1,0,0,0,,32.206476996615,-110.840956311674,2023,9,1,False,False
+2710586,2023-09-18,Arizona,Tucson,S Fremont Ave and E Calle Nevada,2,0,0,0,2,,32.162341008389,-110.955049291748,2023,9,2,True,False
 2714345,2023-09-23,Arizona,Tucson,1250 S Pantano Rd,1,0,1,0,0,,32.205800925771,-110.827014508592,2023,9,1,True,False
 2720230,2023-09-28,Arizona,Tucson,3833 N Fairview Ave,1,0,0,0,0,,32.276565544925,-110.986698045002,2023,9,1,True,False
 2722862,2023-10-01,Arizona,Tucson,W Elm St and N 9th Ave,0,0,1,0,0,,32.242710997618,-110.973395782844,2023,10,0,False,False
@@ -728,9 +728,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3005917,2024-08-26,Arizona,Tucson,3144 N Olsen Ave,0,1,0,0,0,,32.263830734042,-110.941581394535,2024,8,1,False,False
 3007741,2024-08-27,Arizona,Tucson,5151 E Speedway Blvd,1,0,0,1,0,,32.236252289975,-110.882952326574,2024,8,1,True,False
 3011893,2024-08-31,Arizona,Tucson,1070 E Ganley Rd,0,1,0,0,0,,32.139450716015,-110.955189854656,2024,8,1,False,False
-3011880,2024-09-01,Arizona,Tucson,100 block of W Valencia Rd,0,1,0,0,0,,32.134112434502,-110.969232095774,2024,9,1,False,False
-3011895,2024-09-01,Arizona,Tucson,20 E Broadway Blvd,0,1,0,0,0,,32.220987574554,-110.970775576182,2024,9,1,False,False
 3020500,2024-09-01,Arizona,Tucson,3500 block of S Mission Rd,1,0,0,0,0,,32.181412007897,-111.003307477017,2024,9,1,True,False
+3011895,2024-09-01,Arizona,Tucson,20 E Broadway Blvd,0,1,0,0,0,,32.220987574554,-110.970775576182,2024,9,1,False,False
+3011880,2024-09-01,Arizona,Tucson,100 block of W Valencia Rd,0,1,0,0,0,,32.134112434502,-110.969232095774,2024,9,1,False,False
 3014882,2024-09-03,Arizona,Tucson,5535 E Helen St,0,1,0,0,0,,32.237161289471,-110.875060723603,2024,9,1,False,False
 3013699,2024-09-03,Arizona,Tucson,2201 E Speedway Blvd,0,1,0,0,0,,32.236108292669,-110.939506053232,2024,9,1,False,False
 3016282,2024-09-04,Arizona,Tucson,5445 S Alvernon Way,0,0,0,0,0,,32.154430222107,-110.909212125259,2024,9,0,False,False
@@ -773,8 +773,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3075826,2024-11-18,Arizona,Tucson,E Flower St and N Richey Blvd,0,1,0,0,0,,32.254149993257,-110.91621879351,2024,11,1,False,False
 3082814,2024-11-20,Arizona,Tucson,5680 S Mission Rd,0,1,0,0,0,,32.148627113148,-111.013064969572,2024,11,1,False,False
 3079688,2024-11-22,Arizona,Tucson,4301 E Grant Rd,0,1,0,0,0,,32.250661288749,-110.901161549085,2024,11,1,False,False
-3079694,2024-11-23,Arizona,Tucson,5301 E Grant Rd,0,1,0,0,0,,32.250724287727,-110.879764053311,2024,11,1,False,False
 3091721,2024-11-23,Arizona,Tucson,2600 block of E 22nd St,1,0,0,0,0,,32.206822590982,-110.933878058546,2024,11,1,True,False
+3079694,2024-11-23,Arizona,Tucson,5301 E Grant Rd,0,1,0,0,0,,32.250724287727,-110.879764053311,2024,11,1,False,False
 3083471,2024-11-27,Arizona,Tucson,1400 block of N Hualpai Rd,1,0,0,0,0,,32.238893216251,-110.993314471768,2024,11,1,True,False
 3083807,2024-11-29,Arizona,Tucson,N Balboa Ave and W Laguna St,0,1,0,0,0,,32.259387995345,-110.976298281172,2024,11,1,False,False
 3084481,2024-11-29,Arizona,Tucson,S Midvale Park Rd and Colonial Heights,0,1,0,0,0,,32.151694011987,-110.998807283711,2024,11,1,False,False
@@ -803,9 +803,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3150386,2025-01-27,Arizona,Tucson,E 22nd St and S Park Ave,1,0,0,0,1,,32.20688200199,-110.95619228862,2025,1,1,True,False
 3129205,2025-01-30,Arizona,Tucson,2700 block of S Coconino Vista,1,0,0,0,1,,32.190093909625,-110.935910761102,2025,1,1,True,False
 3131379,2025-02-03,Arizona,Tucson,,1,0,0,0,1,,,,2025,2,1,True,False
+3132239,2025-02-05,Arizona,Tucson,E University Blvd and N Tyndall Ave,0,0,0,0,0,,32.231676998483,-110.957929286653,2025,2,0,False,False
 3133698,2025-02-05,Arizona,Tucson,3838 E Presidio Rd,1,0,1,0,0,,32.263236695993,-110.91093872405,2025,2,1,True,False
 3134952,2025-02-05,Arizona,Tucson,2600 block of N 1st Ave,1,0,0,0,0,,32.254099291078,-110.960894534365,2025,2,1,True,False
-3132239,2025-02-05,Arizona,Tucson,E University Blvd and N Tyndall Ave,0,0,0,0,0,,32.231676998483,-110.957929286653,2025,2,0,False,False
 3135990,2025-02-09,Arizona,Tucson,8450 E Old Spanish Trl,0,1,0,0,0,,32.219138426919,-110.811783458999,2025,2,1,False,False
 3137546,2025-02-11,Arizona,Tucson,1330 S Home View Ln,0,1,0,0,0,,32.205232913339,-110.776500977874,2025,2,1,False,False
 3138409,2025-02-12,Arizona,Tucson,E University Blvd and N Tyndall Ave,0,0,0,0,0,,32.231676998483,-110.957929286653,2025,2,0,False,False
@@ -817,8 +817,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3145444,2025-02-24,Arizona,Tucson,63 E Congress St,0,1,0,0,1,,32.221973051345,-110.970315374799,2025,2,1,False,False
 3156800,2025-02-24,Arizona,Tucson,2701 S Campbell Ave,0,0,0,0,0,,32.191715559881,-110.943463777713,2025,2,0,False,False
 3147341,2025-02-25,Arizona,Tucson,E Valencia Rd and S Park Ave,0,1,0,0,0,,32.134108012539,-110.956255293339,2025,2,1,False,False
-3148738,2025-02-26,Arizona,Tucson,W 27th St and S 10th Ave,1,0,0,0,0,,32.201572003626,-110.974592785295,2025,2,1,True,False
 3149666,2025-02-26,Arizona,Tucson,,0,1,0,0,0,,,,2025,2,1,False,False
+3148738,2025-02-26,Arizona,Tucson,W 27th St and S 10th Ave,1,0,0,0,0,,32.201572003626,-110.974592785295,2025,2,1,True,False
 3157839,2025-03-03,Arizona,Tucson,5000 block of W Nighthawk Way,0,1,0,0,0,,32.377527687189,-111.072382596788,2025,3,1,False,False
 3153265,2025-03-04,Arizona,Tucson,6118 E 14th St,0,1,0,0,0,,32.216895037708,-110.861427781188,2025,3,1,False,False
 3153275,2025-03-04,Arizona,Tucson,2316 E Roosevelt St,0,1,0,0,0,,,,2025,3,1,False,False
@@ -878,8 +878,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3327143,2025-10-07,Arizona,Tucson,S 12th Ave and W Valencia Rd,0,1,0,0,2,,32.133964013568,-110.97774728906,2025,10,1,False,False
 3338602,2025-10-22,Arizona,Tucson,2800 E Ajo Way,0,0,1,0,0,,32.17788970935,-110.931946101796,2025,10,0,False,False
 3341329,2025-10-25,Arizona,Tucson,8640 E Broadway Blvd,0,0,0,1,1,,32.220887393735,-110.808058744016,2025,10,0,False,False
-3345920,2025-11-01,Arizona,Tucson,W Drexel Rd and S 12th Ave,1,3,0,0,0,,32.148679011426,-110.977558288144,2025,11,4,True,True
 3345933,2025-11-01,Arizona,Tucson,4200 block of N 1st Ave,0,1,0,0,0,,32.28303458884,-110.961002869876,2025,11,1,False,False
+3345920,2025-11-01,Arizona,Tucson,W Drexel Rd and S 12th Ave,1,3,0,0,0,,32.148679011426,-110.977558288144,2025,11,4,True,True
 3346905,2025-11-02,Arizona,Tucson,900 S Randolph Way,1,2,0,0,0,,32.210629970672,-110.918028014002,2025,11,3,True,False
 3348577,2025-11-02,Arizona,Tucson,100 block of W Calle Rayo De Sol,2,2,0,0,0,,32.146046663432,-110.969780960541,2025,11,4,True,True
 3346941,2025-11-03,Arizona,Tucson,N 1st Ave and E Limberlost Dr,0,1,0,0,0,,32.282976991213,-110.961070282661,2025,11,1,False,False
@@ -938,8 +938,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3490419,2026-06-12,Arizona,Tucson,6900 block of W Naomi Rd,0,1,0,0,0,,32.189956307407,-111.11039015777,2026,6,1,False,False
 3490441,2026-06-15,Arizona,Tucson,4800 block of E Pima St,1,0,0,0,0,,32.243347151283,-110.890464525233,2026,6,1,True,False
 3491577,2026-06-18,Arizona,Tucson,W Ajo Way and S Mission Rd,0,1,0,0,0,,32.177866008408,-111.00326678112,2026,6,1,False,False
-3496667,2026-06-26,Arizona,Tucson,3300 block of S 6th Ave,1,0,0,0,1,,32.186520001213,-110.968391139722,2026,6,1,True,False
 3496155,2026-06-26,Arizona,Tucson,E Fairmount St and N Dodge Blvd,0,1,0,0,0,,32.239776995232,-110.913968794901,2026,6,1,False,False
+3496667,2026-06-26,Arizona,Tucson,3300 block of S 6th Ave,1,0,0,0,1,,32.186520001213,-110.968391139722,2026,6,1,True,False
 3498460,2026-06-29,Arizona,Tucson,8250 E Golf Links Rd,1,0,0,0,1,,32.191821531383,-110.816121719776,2026,6,1,True,False
 3499008,2026-06-30,Arizona,Tucson,I-19 and Ajo Way,0,0,0,1,1,,,,2026,6,0,False,False
 3499014,2026-06-30,Arizona,Tucson,W Columbia St and S 6th Ave,1,0,0,0,1,,32.173168007439,-110.968220788416,2026,6,1,True,False
@@ -948,3 +948,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3510824,2026-07-19,Arizona,Tucson,137 E Congress St,0,9,0,1,1,,32.222023456764,-110.969314501603,2026,7,9,False,True
 3511454,2026-07-19,Arizona,Tucson,W Kelso St and N Balboa Ave,1,0,0,0,0,,32.255751995868,-110.976257781419,2026,7,1,True,False
 3511477,2026-07-20,Arizona,Tucson,2950 N Columbus Blvd,0,1,0,0,0,,32.260596172947,-110.900965309259,2026,7,1,False,False
+3530568,2026-08-17,Arizona,Tucson,2000 block of S Sahuara Ave,1,0,0,0,2,,32.198742703247,-110.866584016115,2026,8,1,True,False
+3531282,2026-08-19,Arizona,Tucson,7700 block of S Enchanted Spring Dr,1,1,0,0,2,,32.11137421158,-111.107484763515,2026,8,2,True,False
+3533530,2026-08-21,Arizona,Tucson,3100 block of W Capistrano Rd,1,0,0,0,0,,32.138851349025,-111.032750860812,2026,8,1,True,False
+3534717,2026-08-23,Arizona,Tucson,1440 W Irvington Rd,1,0,0,0,0,,32.162910998,-110.99695457038,2026,8,1,True,False
+3538364,2026-08-25,Arizona,Tucson,5350 E 16th St,0,0,0,0,1,,32.214320783367,-110.877881222011,2026,8,0,False,False
+3538916,2026-08-31,Arizona,Tucson,1239 N 6th Ave,2,0,1,0,0,,32.237727791597,-110.968798529772,2026,8,2,True,False
