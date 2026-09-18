@@ -31,12 +31,21 @@ def base_map(city_cfg):
     # prefer_canvas: cities like Milwaukee have thousands of markers in a
     # single layer — default SVG rendering chokes the browser at that count,
     # canvas rendering handles it fine.
-    return folium.Map(
+    # Esri Light Gray Canvas: keyless (CARTO's raster tiles now require an API key).
+    esri = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/"
+    m = folium.Map(
         location=[city_cfg["lat"], city_cfg["lon"]],
         zoom_start=city_cfg["zoom"],
-        tiles="CartoDB Voyager",
+        tiles=esri + "World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+        attr="Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors",
+        max_native_zoom=16,
         prefer_canvas=True,
     )
+    folium.TileLayer(
+        tiles=esri + "World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",
+        attr="Esri", max_native_zoom=16, overlay=True, control=False,
+    ).add_to(m)
+    return m
 
 
 def add_title(m, html_text):
