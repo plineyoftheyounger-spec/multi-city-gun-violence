@@ -59,8 +59,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1088007,2018-04-09,Mississippi,Jackson,Woodside Drive,0,1,0,0,0,,,,2018,4,1,False,False
 1090302,2018-04-11,Mississippi,Jackson,2322 Forest Ave,0,1,0,0,0,,32.370630372266,-90.207284533151,2018,4,1,False,False
 1093982,2018-04-17,Mississippi,Jackson,4573 Bullard St,1,0,0,0,1,,32.328798381388,-90.238974982292,2018,4,1,True,False
-1095253,2018-04-18,Mississippi,Jackson,University Boulevard and Winter Street,1,0,0,0,0,,,,2018,4,1,True,False
 1094491,2018-04-18,Mississippi,Jackson,800 block of Fairfax Circle,0,1,0,0,0,,32.384184817303,-90.14036848437,2018,4,1,False,False
+1095253,2018-04-18,Mississippi,Jackson,University Boulevard and Winter Street,1,0,0,0,0,,,,2018,4,1,True,False
 1096349,2018-04-21,Mississippi,Jackson,Bailey Ave,0,0,0,0,2,,,,2018,4,0,False,False
 1105418,2018-04-27,Mississippi,Jackson,3655 Livingston Rd,0,0,0,0,0,,32.352275191499,-90.201449732148,2018,4,0,False,False
 1101696,2018-04-27,Mississippi,Jackson,Colonial Dr,1,0,0,0,1,,,,2018,4,1,True,False
@@ -145,10 +145,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1255801,2018-11-14,Mississippi,Jackson,2600 block of Teresa Dr,1,0,0,0,0,,32.268446803424,-90.241670969963,2018,11,1,True,False
 1415828,2018-11-19,Mississippi,Jackson,Beaumont St,0,0,0,0,1,,,,2018,11,0,False,False
 1261052,2018-11-20,Mississippi,Jackson,I-55,0,0,0,0,3,,,,2018,11,0,False,False
+1261050,2018-11-21,Mississippi,Jackson,Bishop Ave,1,0,0,0,0,,,,2018,11,1,True,False
+1261048,2018-11-21,Mississippi,Jackson,2600 block of Belvedere Dr,0,1,0,0,0,,32.268409759548,-90.227218230728,2018,11,1,False,False
 1261779,2018-11-21,Mississippi,Jackson,I-55,0,0,0,0,0,,,,2018,11,0,False,False
 1261056,2018-11-21,Mississippi,Jackson,Downing St and Mitchell Ave,0,2,0,0,0,,32.335338082869,-90.180165244243,2018,11,2,False,False
-1261048,2018-11-21,Mississippi,Jackson,2600 block of Belvedere Dr,0,1,0,0,0,,32.268409759548,-90.227218230728,2018,11,1,False,False
-1261050,2018-11-21,Mississippi,Jackson,Bishop Ave,1,0,0,0,0,,,,2018,11,1,True,False
 1262747,2018-11-24,Mississippi,Jackson,1600 block of Central St,0,1,0,0,0,,32.303149034574,-90.20986966445,2018,11,1,False,False
 1262771,2018-11-25,Mississippi,Jackson,3940 Bullard St,1,0,0,0,0,,32.329156374196,-90.232262596924,2018,11,1,True,False
 1262755,2018-11-25,Mississippi,Jackson,200 block of Parcel Dr,0,1,0,0,0,,32.267234802808,-90.204745931351,2018,11,1,False,False
@@ -171,8 +171,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1287722,2018-12-29,Mississippi,Jackson,Deer Park St,1,0,0,0,1,,,,2018,12,1,True,False
 1289191,2018-12-30,Mississippi,Jackson,4414 Medgar Evers Blvd,0,0,0,0,0,,32.350248046825,-90.225495572508,2018,12,0,False,False
 1290907,2019-01-01,Mississippi,Jackson,1100 block of W Pearl St,1,0,0,0,0,,32.300332427889,-90.204455269721,2019,1,1,True,False
-1293640,2019-01-05,Mississippi,Jackson,1300 block of Palmyra St,1,1,0,0,0,,32.316596606108,-90.195665680833,2019,1,2,True,False
 1293315,2019-01-05,Mississippi,Jackson,1500 block of Wingfield Dr,0,0,0,1,2,,32.282150466287,-90.245706179823,2019,1,0,False,False
+1293640,2019-01-05,Mississippi,Jackson,1300 block of Palmyra St,1,1,0,0,0,,32.316596606108,-90.195665680833,2019,1,2,True,False
 1294962,2019-01-07,Mississippi,Jackson,Shady Ln Dr and Raymond Rd,0,1,0,0,0,,32.284119095694,-90.237256731366,2019,1,1,False,False
 1297094,2019-01-09,Mississippi,Jackson,1600 block of 1st Ave,1,0,0,0,0,,32.308666163596,-90.211709594522,2019,1,1,True,False
 1297747,2019-01-10,Mississippi,Jackson,3165 Robinson St,0,1,0,0,1,,32.306381795458,-90.239701794002,2019,1,1,False,False
@@ -181,9 +181,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1299973,2019-01-13,Mississippi,Jackson,2711 Greenway Dr,1,0,0,0,3,,32.290686682554,-90.267021379604,2019,1,1,True,False
 1301894,2019-01-14,Mississippi,Jackson,759 Glencross Dr,0,0,0,1,1,,32.392425661375,-90.162184366796,2019,1,0,False,False
 1300756,2019-01-14,Mississippi,Jackson,5731 I-55 N,0,0,0,0,0,,,,2019,1,0,False,False
-1303795,2019-01-16,Mississippi,Jackson,2300 block of Coronet Pl,1,0,0,0,0,,32.275485431106,-90.224376732256,2019,1,1,True,False
-1302493,2019-01-16,Mississippi,Jackson,Green Ave and Robinson St,1,0,0,0,0,,32.30488209011,-90.203992739347,2019,1,1,True,False
 1303789,2019-01-16,Mississippi,Jackson,1900 block of Teakwood Dr,0,0,2,0,0,,32.266372507536,-90.261243778823,2019,1,0,False,False
+1302493,2019-01-16,Mississippi,Jackson,Green Ave and Robinson St,1,0,0,0,0,,32.30488209011,-90.203992739347,2019,1,1,True,False
+1303795,2019-01-16,Mississippi,Jackson,2300 block of Coronet Pl,1,0,0,0,0,,32.275485431106,-90.224376732256,2019,1,1,True,False
 1305936,2019-01-19,Mississippi,Jackson,,0,1,0,0,0,,,,2019,1,1,False,False
 1307505,2019-01-21,Mississippi,Jackson,Gibraltar Ave,0,0,0,2,0,,,,2019,1,0,False,False
 1308524,2019-01-22,Mississippi,Jackson,Van Winkle Park Dr,0,1,0,0,0,,,,2019,1,1,False,False
@@ -218,8 +218,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1351256,2019-03-20,Mississippi,Jackson,2500 block of Queensroad Ave,0,1,0,0,0,,32.353674376106,-90.215598558317,2019,3,1,False,False
 1361615,2019-03-20,Mississippi,Jackson,Oakhill Dr,0,0,0,0,1,,,,2019,3,0,False,False
 1352397,2019-03-21,Mississippi,Jackson,4600 block of Van Winkle Park Dr,0,0,1,1,0,,32.304659432293,-90.262660623625,2019,3,0,False,False
-1353645,2019-03-23,Mississippi,Jackson,Houston Ave,0,1,0,0,0,,,,2019,3,1,False,False
 1353711,2019-03-23,Mississippi,Jackson,1400 block of Bass Ave,1,0,0,0,0,,32.233959684619,-90.283818841624,2019,3,1,True,False
+1353645,2019-03-23,Mississippi,Jackson,Houston Ave,0,1,0,0,0,,,,2019,3,1,False,False
 1356102,2019-03-26,Mississippi,Jackson,Ridgewood Rd and Adkins Blvd,0,1,0,0,0,,32.384226071246,-90.141915252099,2019,3,1,False,False
 1356943,2019-03-27,Mississippi,Jackson,3800 block of Noble St,0,0,1,0,0,,32.308989386771,-90.251737434862,2019,3,0,False,False
 1357929,2019-03-28,Mississippi,Jackson,Erie St and Bailey Ave,1,0,0,0,0,,32.319498086699,-90.194254741234,2019,3,1,True,False
@@ -230,19 +230,19 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1361000,2019-04-01,Mississippi,Jackson,Lakeland Dr,0,0,0,0,0,,,,2019,4,0,False,False
 1361530,2019-04-02,Mississippi,Jackson,4800 block of Brookwood Place,0,1,0,0,0,,32.220480921802,-90.269908980786,2019,4,1,False,False
 1363838,2019-04-03,Mississippi,Jackson,2800 Greenway Dr,1,0,0,0,0,,32.290804679314,-90.264880186888,2019,4,1,True,False
-1451499,2019-04-08,Mississippi,Jackson,1400 block of Ellis Ave,1,0,0,0,0,,32.294619443928,-90.227760696576,2019,4,1,True,False
-1366387,2019-04-08,Mississippi,Jackson,300 Woody Dr,0,1,0,0,0,,32.257473396638,-90.229390987659,2019,4,1,False,False
 1366163,2019-04-08,Mississippi,Jackson,800 block of Lindbergh Dr,0,1,0,0,1,,,,2019,4,1,False,False
+1366387,2019-04-08,Mississippi,Jackson,300 Woody Dr,0,1,0,0,0,,32.257473396638,-90.229390987659,2019,4,1,False,False
+1451499,2019-04-08,Mississippi,Jackson,1400 block of Ellis Ave,1,0,0,0,0,,32.294619443928,-90.227760696576,2019,4,1,True,False
 1367173,2019-04-09,Mississippi,Jackson,3930 Skyview Dr,1,0,0,0,2,,32.346754095758,-90.220348604829,2019,4,1,True,False
 1368118,2019-04-10,Mississippi,Jackson,4100 block of Carter Cir,1,0,0,0,1,,32.307375614566,-90.254108144461,2019,4,1,True,False
 1369954,2019-04-12,Mississippi,Jackson,O’Bannon Dr and Skyview Dr,0,2,0,0,0,,,,2019,4,2,False,False
 1371042,2019-04-14,Mississippi,Jackson,5200 block of Brockhollow Dr,1,0,0,0,1,,32.262593775508,-90.311854195094,2019,4,1,True,False
+1374549,2019-04-17,Mississippi,Jackson,1100 N West St,0,1,0,0,0,,32.312287267153,-90.18169988169,2019,4,1,False,False
 1374536,2019-04-17,Mississippi,Jackson,Moss Ave and W Capitol St,1,0,0,0,0,,32.319003087915,-90.223491233282,2019,4,1,True,False
 1374539,2019-04-17,Mississippi,Jackson,Parkway Ave,0,2,0,0,0,,,,2019,4,2,False,False
-1374549,2019-04-17,Mississippi,Jackson,1100 N West St,0,1,0,0,0,,32.312287267153,-90.18169988169,2019,4,1,False,False
 1376340,2019-04-19,Mississippi,Jackson,1000 block of Metairie Rd,0,1,0,0,0,,32.302351432379,-90.232079563246,2019,4,1,False,False
-1377396,2019-04-21,Mississippi,Jackson,3200 block of W Capitol St,0,1,0,0,0,,32.321809922316,-90.226845335546,2019,4,1,False,False
 1383121,2019-04-21,Mississippi,Jackson,Revels Ave and Eminence Row,1,0,0,0,1,,32.348631080512,-90.190843740625,2019,4,1,True,False
+1377396,2019-04-21,Mississippi,Jackson,3200 block of W Capitol St,0,1,0,0,0,,32.321809922316,-90.226845335546,2019,4,1,False,False
 2016478,2019-04-21,Mississippi,Jackson,,1,0,0,0,1,,,,2019,4,1,True,False
 1378276,2019-04-22,Mississippi,Jackson,Harding St,0,1,0,0,0,,,,2019,4,1,False,False
 1381122,2019-04-26,Mississippi,Jackson,Will-O-Wood Blvd,0,1,0,0,0,,,,2019,4,1,False,False
@@ -268,8 +268,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1399562,2019-05-18,Mississippi,Jackson,Pinebrook Dr,0,1,0,0,0,,,,2019,5,1,False,False
 1400419,2019-05-20,Mississippi,Jackson,Lindsey Dr and Jayne Ave,0,2,0,0,0,,32.315133089221,-90.236644729898,2019,5,2,False,False
 1401317,2019-05-21,Mississippi,Jackson,1400 Wood St,1,0,0,0,0,,32.318007382653,-90.192823443711,2019,5,1,True,False
-1402503,2019-05-22,Mississippi,Jackson,2600 block of Brown St,0,0,0,1,0,,32.324919381574,-90.202219435607,2019,5,0,False,False
 1402499,2019-05-22,Mississippi,Jackson,700 block of W McDowell Rd,1,0,0,0,2,,32.268525394261,-90.227352495885,2019,5,1,True,False
+1402503,2019-05-22,Mississippi,Jackson,2600 block of Brown St,0,0,0,1,0,,32.324919381574,-90.202219435607,2019,5,0,False,False
 1403127,2019-05-23,Mississippi,Jackson,200 Beach St,1,0,0,0,0,,32.328306977866,-90.235838964587,2019,5,1,True,False
 1408158,2019-05-27,Mississippi,Jackson,Woody Dr,0,1,0,0,0,,,,2019,5,1,False,False
 1406944,2019-05-27,Mississippi,Jackson,I-220 and Industrial Dr,0,0,1,0,0,,32.330501170885,-90.23057291926,2019,5,0,False,False
@@ -293,8 +293,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1429432,2019-06-23,Mississippi,Jackson,Country Club Dr,0,1,0,0,0,,,,2019,6,1,False,False
 1430535,2019-06-24,Mississippi,Jackson,Dewitt St and Bailey Ave,1,0,0,0,2,,,,2019,6,1,True,False
 1432717,2019-06-26,Mississippi,Jackson,3100 block of Alameda Dr,0,1,0,0,0,,32.260328028403,-90.224720411414,2019,6,1,False,False
-1436384,2019-06-30,Mississippi,Jackson,2300 block of Ridgeway St,0,1,0,0,0,,32.341470378519,-90.212354050699,2019,6,1,False,False
 1436008,2019-06-30,Mississippi,Jackson,1400 block of Wiggins Rd,0,0,1,0,0,,32.309315796495,-90.282949426003,2019,6,0,False,False
+1436384,2019-06-30,Mississippi,Jackson,2300 block of Ridgeway St,0,1,0,0,0,,32.341470378519,-90.212354050699,2019,6,1,False,False
 1439012,2019-07-02,Mississippi,Jackson,2400 block of Queensroad Ave,0,0,0,0,0,,32.353656376054,-90.214142999687,2019,7,0,False,False
 1438733,2019-07-03,Mississippi,Jackson,500 block of Cohea St,0,1,0,0,0,,32.310381493572,-90.195158289623,2019,7,1,False,False
 1446319,2019-07-12,Mississippi,Jackson,3628 Medgar Evers Blvd,0,1,0,0,0,,,,2019,7,1,False,False
@@ -329,8 +329,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1519758,2019-10-04,Mississippi,Jackson,Roach St,0,1,0,0,0,,,,2019,10,1,False,False
 1519760,2019-10-04,Mississippi,Jackson,1000 block of W Woodrow Wilson Ave,0,1,0,0,0,,32.326904894622,-90.205294310595,2019,10,1,False,False
 1522873,2019-10-09,Mississippi,Jackson,3300 block of Oakview Dr,0,1,0,0,0,,32.25666908714,-90.252388475675,2019,10,1,False,False
-1525049,2019-10-10,Mississippi,Jackson,700 block of President St,0,1,0,0,1,,,,2019,10,1,False,False
 1524140,2019-10-10,Mississippi,Jackson,4100 block of Parkway Ave,1,0,0,0,0,,32.349671878856,-90.207557466973,2019,10,1,True,False
+1525049,2019-10-10,Mississippi,Jackson,700 block of President St,0,1,0,0,1,,,,2019,10,1,False,False
 1525536,2019-10-12,Mississippi,Jackson,Gaddis St and West St,0,1,0,0,0,,32.336850082624,-90.182001243662,2019,10,1,False,False
 1526224,2019-10-13,Mississippi,Jackson,1200 block of Handy Ave,1,0,0,0,0,,32.291231360988,-90.202836082145,2019,10,1,True,False
 1530359,2019-10-14,Mississippi,Jackson,,0,1,0,0,1,,,,2019,10,1,False,False
@@ -365,10 +365,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1564013,2019-12-04,Mississippi,Jackson,1100 John R Lynch St,0,1,0,0,2,,32.297622872892,-90.204455943012,2019,12,1,False,False
 1564246,2019-12-04,Mississippi,Jackson,6500 block of Lyndon B Johnson Dr,0,1,0,0,0,,32.368835959513,-90.264163533989,2019,12,1,False,False
 1566129,2019-12-06,Mississippi,Jackson,I 20 Frontage Rd and S Gallatin St,1,1,0,0,3,,32.274138096094,-90.193107243937,2019,12,2,True,False
+1566696,2019-12-07,Mississippi,Jackson,1300 block of Kennington Ave,1,0,0,0,0,,32.330094065276,-90.207789825332,2019,12,1,True,False
+1566698,2019-12-07,Mississippi,Jackson,2300 block of Montebllo Dr,0,1,0,0,1,,32.353550462873,-90.212956792662,2019,12,1,False,False
 1566914,2019-12-07,Mississippi,Jackson,Wainwright Ave and Eisenhower St,1,0,0,0,0,,32.315826089118,-90.237724729566,2019,12,1,True,False
 1567296,2019-12-07,Mississippi,Jackson,Dalton St and Topp Ave,0,1,0,0,0,,32.290680093134,-90.205824239596,2019,12,1,False,False
-1566698,2019-12-07,Mississippi,Jackson,2300 block of Montebllo Dr,0,1,0,0,1,,32.353550462873,-90.212956792662,2019,12,1,False,False
-1566696,2019-12-07,Mississippi,Jackson,1300 block of Kennington Ave,1,0,0,0,0,,32.330094065276,-90.207789825332,2019,12,1,True,False
 1566896,2019-12-08,Mississippi,Jackson,3800 block of I-55 S,0,1,0,0,0,,32.27576457422,-90.192178127025,2019,12,1,False,False
 1566907,2019-12-08,Mississippi,Jackson,Terry Rd and W McDowell Rd,0,2,0,0,0,,32.268414098244,-90.218365737346,2019,12,2,False,False
 1567299,2019-12-08,Mississippi,Jackson,4850 Watkins Dr,1,2,0,0,2,,32.368783295505,-90.192710903011,2019,12,3,True,False
@@ -416,8 +416,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1618906,2020-02-10,Mississippi,Jackson,Sykes Park Dr,1,0,0,0,0,,,,2020,2,1,True,False
 1621092,2020-02-13,Mississippi,Jackson,Ford Ave and Markham St,1,0,0,0,0,,32.329020086245,-90.234327229796,2020,2,1,True,False
 1620762,2020-02-13,Mississippi,Jackson,Florence Ave,1,0,0,0,2,,,,2020,2,1,True,False
-1621792,2020-02-14,Mississippi,Jackson,W Highland Dr and John R Lynch St,0,2,0,0,0,,,,2020,2,2,False,False
 1621795,2020-02-14,Mississippi,Jackson,4500 block of Bullard St,0,1,0,0,0,,32.32897758045,-90.238504421585,2020,2,1,False,False
+1621792,2020-02-14,Mississippi,Jackson,W Highland Dr and John R Lynch St,0,2,0,0,0,,,,2020,2,2,False,False
 1634683,2020-02-18,Mississippi,Jackson,3540 Sunset Dr,1,0,0,0,1,,32.339487664446,-90.222689472447,2020,2,1,True,False
 1625781,2020-02-18,Mississippi,Jackson,1320 N Mill St,1,0,0,0,0,,32.315780463944,-90.189620559882,2020,2,1,True,False
 1624514,2020-02-19,Mississippi,Jackson,1225 N State St,2,0,1,0,0,,32.314274825719,-90.178330635606,2020,2,2,True,False
@@ -429,8 +429,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1633912,2020-03-03,Mississippi,Jackson,S State St,0,1,0,0,0,,,,2020,3,1,False,False
 1633908,2020-03-04,Mississippi,Jackson,I-220 and Industrial Dr,0,1,0,0,0,,32.330501170885,-90.23057291926,2020,3,1,False,False
 1635734,2020-03-07,Mississippi,Jackson,5200 block of Brookview Dr,1,0,0,0,0,,32.20623527115,-90.254683719702,2020,3,1,True,False
-1638307,2020-03-10,Mississippi,Jackson,Munsey Ave,0,1,0,0,0,,,,2020,3,1,False,False
 1637777,2020-03-10,Mississippi,Jackson,19 North Hill Pkwy,1,0,0,0,0,,32.357471652733,-90.155158422296,2020,3,1,True,False
+1638307,2020-03-10,Mississippi,Jackson,Munsey Ave,0,1,0,0,0,,,,2020,3,1,False,False
 1639474,2020-03-12,Mississippi,Jackson,100 block of Sivley Ave,0,1,0,0,0,,32.310822232093,-90.206592005198,2020,3,1,False,False
 1642298,2020-03-14,Mississippi,Jackson,81 Pickwick Ct,0,1,0,0,0,,32.387849775878,-90.170276136876,2020,3,1,False,False
 1641355,2020-03-17,Mississippi,Jackson,400 block of Earle St,0,1,0,0,0,,32.295885387254,-90.19278802432,2020,3,1,False,False
@@ -440,11 +440,11 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1645825,2020-03-25,Mississippi,Jackson,700 block of Lindsey Dr,1,0,0,1,1,,32.311960187441,-90.236646415408,2020,3,1,True,False
 1651905,2020-04-02,Mississippi,Jackson,Hair St and McKinley St,0,1,0,0,0,,32.288529093631,-90.207111239358,2020,4,1,False,False
 1651231,2020-04-03,Mississippi,Jackson,3400 block of Edwards Ave,1,1,0,0,1,,32.347004718887,-90.19472615014,2020,4,2,True,False
-1653117,2020-04-06,Mississippi,Jackson,3276 US-80,1,1,0,0,1,,32.283543654332,-90.110439442033,2020,4,2,True,False
-1653122,2020-04-06,Mississippi,Jackson,1390 Forest Ave,1,0,0,0,3,,32.370635325833,-90.205214028119,2020,4,1,True,False
-1653120,2020-04-06,Mississippi,Jackson,5100 block of Ginger Dr,0,1,0,0,0,,32.338858329714,-90.262742064055,2020,4,1,False,False
-1653124,2020-04-06,Mississippi,Jackson,2400 block of Williamson Ave,0,3,0,0,0,,32.326963800334,-90.191547159546,2020,4,3,False,False
 1653130,2020-04-06,Mississippi,Jackson,3900 block of Parkway Dr,0,0,0,0,0,,32.346042377386,-90.207574417203,2020,4,0,False,False
+1653124,2020-04-06,Mississippi,Jackson,2400 block of Williamson Ave,0,3,0,0,0,,32.326963800334,-90.191547159546,2020,4,3,False,False
+1653120,2020-04-06,Mississippi,Jackson,5100 block of Ginger Dr,0,1,0,0,0,,32.338858329714,-90.262742064055,2020,4,1,False,False
+1653122,2020-04-06,Mississippi,Jackson,1390 Forest Ave,1,0,0,0,3,,32.370635325833,-90.205214028119,2020,4,1,True,False
+1653117,2020-04-06,Mississippi,Jackson,3276 US-80,1,1,0,0,1,,32.283543654332,-90.110439442033,2020,4,2,True,False
 1654963,2020-04-08,Mississippi,Jackson,400 block of Maple St,1,2,0,0,0,,32.318042842174,-90.1957856726,2020,4,3,True,False
 1655998,2020-04-09,Mississippi,Jackson,Del Rosa Dr,0,1,0,0,0,,,,2020,4,1,False,False
 1661020,2020-04-09,Mississippi,Jackson,2600 block of Belvedere Dr,1,0,0,0,0,,32.268409759548,-90.227218230728,2020,4,1,True,False
@@ -478,8 +478,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1690722,2020-05-28,Mississippi,Jackson,200 block of Stokes Robertson Rd,1,0,0,0,1,,,,2020,5,1,True,False
 1693743,2020-05-31,Mississippi,Jackson,100 block of Maple Ridge Dr,0,1,0,0,0,,32.26399893835,-90.219528795689,2020,5,1,False,False
 1694270,2020-05-31,Mississippi,Jackson,4600 block of W Northside Dr,1,0,0,0,1,,,,2020,5,1,True,False
-1699624,2020-06-07,Mississippi,Jackson,Englewood Blvd and Dunlap Ave,1,0,0,0,0,,32.26303209916,-90.212988239096,2020,6,1,True,False
 1699440,2020-06-07,Mississippi,Jackson,51 Northtown Dr,0,0,1,0,0,,,,2020,6,0,False,False
+1699624,2020-06-07,Mississippi,Jackson,Englewood Blvd and Dunlap Ave,1,0,0,0,0,,32.26303209916,-90.212988239096,2020,6,1,True,False
 1729426,2020-06-10,Mississippi,Jackson,621 Houston Ave,1,0,0,0,1,,32.310183133984,-90.226562292711,2020,6,1,True,False
 1701944,2020-06-10,Mississippi,Jackson,3320 Medgar Evers Blvd,0,1,0,0,0,,32.337208779653,-90.210216183543,2020,6,1,False,False
 1702847,2020-06-11,Mississippi,Jackson,Hill Ave and Dalton St,1,1,0,0,0,,32.292219092814,-90.205819739516,2020,6,2,True,False
@@ -503,8 +503,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1732547,2020-07-12,Mississippi,Jackson,Bounds St and Keele St,1,1,0,0,0,,32.370267074564,-90.152818749861,2020,7,2,True,False
 1734660,2020-07-14,Mississippi,Jackson,1700 block of Maria Dr,1,0,0,0,0,,32.272739987311,-90.25073128009,2020,7,1,True,False
 1739938,2020-07-19,Mississippi,Jackson,Triangle Dr and W Northside Dr,1,0,0,0,0,,,,2020,7,1,True,False
-1742105,2020-07-20,Mississippi,Jackson,5354 I-55 N Frontage Rd,0,1,0,0,0,,,,2020,7,1,False,False
 1740795,2020-07-20,Mississippi,Jackson,300 block of Rosslyn Ave,1,0,0,0,1,,32.326053382747,-90.239219032635,2020,7,1,True,False
+1742105,2020-07-20,Mississippi,Jackson,5354 I-55 N Frontage Rd,0,1,0,0,0,,,,2020,7,1,False,False
 1742103,2020-07-21,Mississippi,Jackson,1900 block of Shady Lane Dr,0,1,0,0,0,,32.282119885963,-90.237184459765,2020,7,1,False,False
 1745244,2020-07-23,Mississippi,Jackson,572 Beasley Rd,2,0,0,0,0,,32.385418853327,-90.174337572468,2020,7,2,True,False
 1745320,2020-07-24,Mississippi,Jackson,St Charles St and Houston Ave,0,1,0,0,0,,32.312460089388,-90.226443232822,2020,7,1,False,False
@@ -514,10 +514,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1747972,2020-07-27,Mississippi,Jackson,Oak Forest Dr and Corey Dr,0,1,0,0,0,,32.255526102013,-90.246985730217,2020,7,1,False,False
 1752091,2020-07-31,Mississippi,Jackson,700 block of Erie St,1,0,0,0,0,,32.319594040433,-90.200722740461,2020,7,1,True,False
 1754545,2020-07-31,Mississippi,Jackson,Williamson Ave,0,2,0,0,0,,,,2020,7,2,False,False
+1752572,2020-08-01,Mississippi,Jackson,Arbor Vista Blvd,0,2,0,0,0,,,,2020,8,2,False,False
+1753109,2020-08-01,Mississippi,Jackson,105 Triangle Dr,1,0,0,0,0,,32.35546735296,-90.176116773335,2020,8,1,True,False
 1753596,2020-08-01,Mississippi,Jackson,N State St and E Northside Dr,1,0,0,0,0,,32.355570078435,-90.174198244802,2020,8,1,True,False
 1754548,2020-08-01,Mississippi,Jackson,Terry Rd,0,2,0,0,0,,,,2020,8,2,False,False
-1753109,2020-08-01,Mississippi,Jackson,105 Triangle Dr,1,0,0,0,0,,32.35546735296,-90.176116773335,2020,8,1,True,False
-1752572,2020-08-01,Mississippi,Jackson,Arbor Vista Blvd,0,2,0,0,0,,,,2020,8,2,False,False
 1754554,2020-08-02,Mississippi,Jackson,Watkins Dr and W Northside Dr,0,1,0,0,0,,32.355876079075,-90.192657239747,2020,8,1,False,False
 1753593,2020-08-02,Mississippi,Jackson,1500 block of David Dr,2,0,0,0,1,,32.308549768086,-90.271178668505,2020,8,2,True,False
 1754551,2020-08-03,Mississippi,Jackson,6100 block of Brown St,0,1,0,0,1,,32.400214940188,-90.158794606094,2020,8,1,False,False
@@ -525,9 +525,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1758139,2020-08-06,Mississippi,Jackson,Lawrence Rd,0,1,0,0,0,,,,2020,8,1,False,False
 1758806,2020-08-08,Mississippi,Jackson,3580 Robinson St,1,0,0,0,1,,32.306405967908,-90.245095765496,2020,8,1,True,False
 1758772,2020-08-08,Mississippi,Jackson,3775 Bailey Ave,1,0,0,0,1,,32.353591665893,-90.192709498599,2020,8,1,True,False
+1760207,2020-08-09,Mississippi,Jackson,3600 block of Cromwell St,0,4,0,0,0,,32.343095735157,-90.214869008068,2020,8,4,False,True
 1760667,2020-08-09,Mississippi,Jackson,200 block of W Woodrow Wilson Ave,0,2,0,0,0,,32.326836380724,-90.190369279526,2020,8,2,False,False
 1760464,2020-08-09,Mississippi,Jackson,Ellis Ave and Lynch St,1,0,0,0,1,,32.297664092518,-90.227829233224,2020,8,1,True,False
-1760207,2020-08-09,Mississippi,Jackson,3600 block of Cromwell St,0,4,0,0,0,,32.343095735157,-90.214869008068,2020,8,4,False,True
 1762351,2020-08-11,Mississippi,Jackson,Charlie Rhodus Rd,0,1,0,1,0,,,,2020,8,1,False,False
 1765497,2020-08-15,Mississippi,Jackson,1714 US-80,0,1,0,0,0,,,,2020,8,1,False,False
 1768468,2020-08-17,Mississippi,Jackson,Gallatin St and Winter St,1,0,0,0,0,,32.289537092879,-90.192850743196,2020,8,1,True,False
@@ -540,8 +540,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1777326,2020-08-27,Mississippi,Jackson,100 block of Cedarhurst Rd,0,1,0,0,0,,32.363897353,-90.171003796249,2020,8,1,False,False
 1779185,2020-08-29,Mississippi,Jackson,4704 Hanging Moss Rd,0,1,1,0,0,,32.370145755338,-90.179696905492,2020,8,1,False,False
 1779577,2020-08-30,Mississippi,Jackson,300 block of Greymont Ave,0,2,1,0,0,,32.297881493851,-90.177913163182,2020,8,2,False,False
-1780730,2020-08-31,Mississippi,Jackson,1355 Jefferson St,1,1,0,0,1,,32.316370606638,-90.175338647108,2020,8,2,True,False
 1781404,2020-08-31,Mississippi,Jackson,W Monument St and Capers Ave,1,0,0,0,0,,32.308464089215,-90.200068740229,2020,8,1,True,False
+1780730,2020-08-31,Mississippi,Jackson,1355 Jefferson St,1,1,0,0,1,,32.316370606638,-90.175338647108,2020,8,2,True,False
 1784671,2020-09-03,Mississippi,Jackson,I-55 and Briarwood Dr,0,1,0,0,0,,,,2020,9,1,False,False
 1784667,2020-09-03,Mississippi,Jackson,Terry Rd,0,1,0,0,0,,,,2020,9,1,False,False
 1784665,2020-09-03,Mississippi,Jackson,Grand Ave and Rose St,1,0,0,0,0,,32.306601089653,-90.20137823997,2020,9,1,True,False
@@ -553,8 +553,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1791389,2020-09-10,Mississippi,Jackson,Convent St and Taft St,1,0,0,0,0,,32.314431087505,-90.187743243278,2020,9,1,True,False
 1791401,2020-09-10,Mississippi,Jackson,3600 block of Rainey Rd,1,0,0,0,0,,32.244675976275,-90.253530724047,2020,9,1,True,False
 1796591,2020-09-15,Mississippi,Jackson,Beasley Rd and Whitehill Dr,0,1,0,0,0,,32.385351072305,-90.175755242799,2020,9,1,False,False
-1798388,2020-09-17,Mississippi,Jackson,5800 block of Ridgewood Rd,0,1,0,0,0,,32.38428336693,-90.141847404429,2020,9,1,False,False
 1798411,2020-09-17,Mississippi,Jackson,200 block of Segura Ave,1,1,0,0,0,,32.324084605812,-90.23593219907,2020,9,2,True,False
+1798388,2020-09-17,Mississippi,Jackson,5800 block of Ridgewood Rd,0,1,0,0,0,,32.38428336693,-90.141847404429,2020,9,1,False,False
 1799369,2020-09-18,Mississippi,Jackson,1200 block of Billy Bell Rd,0,0,0,0,1,,32.401349936687,-90.252722148122,2020,9,0,False,False
 1801622,2020-09-20,Mississippi,Jackson,4500 block of Officer Thomas Catchings Sr Dr,1,0,0,0,0,,,,2020,9,1,True,False
 1802710,2020-09-22,Mississippi,Jackson,1200 block of University Blvd,0,1,0,0,0,,,,2020,9,1,False,False
@@ -615,9 +615,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1877122,2020-12-10,Mississippi,Jackson,1805 Hospital Dr,0,5,0,0,0,,,,2020,12,5,False,True
 1876295,2020-12-10,Mississippi,Jackson,2600 block of Raymond Rd,0,1,0,0,0,,32.262516122444,-90.281194989761,2020,12,1,False,False
 1877120,2020-12-12,Mississippi,Jackson,Stirling St,0,1,0,0,0,,,,2020,12,1,False,False
+1885205,2020-12-22,Mississippi,Jackson,300 block of Ridgeway St,1,0,0,0,0,,32.341691664721,-90.181897805903,2020,12,1,True,False
 1887862,2020-12-22,Mississippi,Jackson,1015 E Northside Dr,0,1,0,0,0,,,,2020,12,1,False,False
 1884418,2020-12-22,Mississippi,Jackson,5500 block of N State St,1,0,0,0,0,,32.376027203451,-90.163664995901,2020,12,1,True,False
-1885205,2020-12-22,Mississippi,Jackson,300 block of Ridgeway St,1,0,0,0,0,,32.341691664721,-90.181897805903,2020,12,1,True,False
 1887859,2020-12-26,Mississippi,Jackson,Sandlewood Dr,1,0,0,1,0,,,,2020,12,1,True,False
 1892535,2020-12-31,Mississippi,Jackson,Hair St,2,0,0,0,0,,,,2020,12,2,True,False
 1891422,2020-12-31,Mississippi,Jackson,4414 Medgar Evers Blvd,0,1,0,0,0,,32.350248046825,-90.225495572508,2020,12,1,False,False
@@ -627,10 +627,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1901592,2021-01-13,Mississippi,Jackson,1240 Lawnview Pl,1,0,0,0,1,,32.309665035171,-90.206567369863,2021,1,1,True,False
 1902170,2021-01-14,Mississippi,Jackson,400 block of Maple St,1,1,0,0,0,,32.318042842174,-90.1957856726,2021,1,2,True,False
 1903174,2021-01-15,Mississippi,Jackson,410 Beasley Rd,0,1,0,0,0,,32.385518907324,-90.170552293559,2021,1,1,False,False
-1911566,2021-01-24,Mississippi,Jackson,I-220,1,0,0,0,1,,,,2021,1,1,True,False
 1913683,2021-01-24,Mississippi,Jackson,N West St and Mayes St,0,2,0,0,1,,32.344905080924,-90.181348743414,2021,1,2,False,False
-1911245,2021-01-24,Mississippi,Jackson,Bailey Ave and Mayes St,1,0,0,0,1,,32.344968081341,-90.192625740333,2021,1,1,True,False
 1913679,2021-01-24,Mississippi,Jackson,,0,1,0,0,0,,,,2021,1,1,False,False
+1911566,2021-01-24,Mississippi,Jackson,I-220,1,0,0,0,1,,,,2021,1,1,True,False
+1911245,2021-01-24,Mississippi,Jackson,Bailey Ave and Mayes St,1,0,0,0,1,,32.344968081341,-90.192625740333,2021,1,1,True,False
 1912814,2021-01-25,Mississippi,Jackson,Rose St and Grand Ave,1,0,0,0,1,,32.306601089653,-90.20137823997,2021,1,1,True,False
 1914661,2021-01-25,Mississippi,Jackson,800 block of Buena Vista Ave,1,0,0,0,0,,32.303053018376,-90.213513033016,2021,1,1,True,False
 1912823,2021-01-26,Mississippi,Jackson,5800 block of Ridgewood Rd,1,0,0,0,1,,32.38428336693,-90.141847404429,2021,1,1,True,False
@@ -639,10 +639,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1913619,2021-01-27,Mississippi,Jackson,State St and Northside Dr,1,1,0,0,0,,32.355570078435,-90.174198244802,2021,1,2,True,False
 1916076,2021-01-30,Mississippi,Jackson,5400 block of Clinton Blvd,0,1,0,0,0,,32.333671532495,-90.269911104057,2021,1,1,False,False
 1916198,2021-01-30,Mississippi,Jackson,West St and Mitchell Ave,2,1,0,0,0,,32.335356082936,-90.182028243733,2021,1,3,True,False
-1921703,2021-02-05,Mississippi,Jackson,4125 Sunset Dr,1,0,0,0,0,,,,2021,2,1,True,False
-1921707,2021-02-05,Mississippi,Jackson,Northside Dr and Hanging Moss Rd,0,2,0,0,0,,,,2021,2,2,False,False
-1924873,2021-02-05,Mississippi,Jackson,Mill St,1,0,0,0,0,,,,2021,2,1,True,False
 1921705,2021-02-05,Mississippi,Jackson,Northside Dr and Hanging Moss Rd,0,1,0,0,0,,,,2021,2,1,False,False
+1924873,2021-02-05,Mississippi,Jackson,Mill St,1,0,0,0,0,,,,2021,2,1,True,False
+1921707,2021-02-05,Mississippi,Jackson,Northside Dr and Hanging Moss Rd,0,2,0,0,0,,,,2021,2,2,False,False
+1921703,2021-02-05,Mississippi,Jackson,4125 Sunset Dr,1,0,0,0,0,,,,2021,2,1,True,False
 1923044,2021-02-07,Mississippi,Jackson,1038 W Woodrow Wilson Ave,1,0,1,0,2,,32.32690703946,-90.205559196829,2021,2,1,True,False
 1925220,2021-02-08,Mississippi,Jackson,Cedar Ln,1,0,0,0,0,,,,2021,2,1,True,False
 1927053,2021-02-11,Mississippi,Jackson,Pine Lawn Pl,0,1,0,0,2,,,,2021,2,1,False,False
@@ -689,10 +689,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1979881,2021-04-16,Mississippi,Jackson,Winter St and Rosemont Ave,1,0,0,0,0,,32.291130093025,-90.205405739687,2021,4,1,True,False
 1979871,2021-04-16,Mississippi,Jackson,2635 Pinebrook Dr,3,0,0,0,0,,32.267532560812,-90.234026661506,2021,4,3,True,False
 1980084,2021-04-17,Mississippi,Jackson,3807 Bailey Ave,2,0,0,0,0,,32.35416532078,-90.192711186974,2021,4,2,True,False
+1982651,2021-04-19,Mississippi,Jackson,Ellis Ave,0,0,0,0,0,,,,2021,4,0,False,False
+1982291,2021-04-19,Mississippi,Jackson,759 Glencross Dr,0,1,0,0,0,,32.392425661375,-90.162184366796,2021,4,1,False,False
 1982649,2021-04-19,Mississippi,Jackson,Woodbury Rd,0,1,0,0,0,,,,2021,4,1,False,False
 1982618,2021-04-19,Mississippi,Jackson,Nakoma Dr,0,1,0,0,0,,,,2021,4,1,False,False
-1982291,2021-04-19,Mississippi,Jackson,759 Glencross Dr,0,1,0,0,0,,32.392425661375,-90.162184366796,2021,4,1,False,False
-1982651,2021-04-19,Mississippi,Jackson,Ellis Ave,0,0,0,0,0,,,,2021,4,0,False,False
 1982530,2021-04-20,Mississippi,Jackson,Ridgewood Rd and Adkins Blvd,1,1,0,0,0,,32.384226071246,-90.141915252099,2021,4,2,True,False
 1991625,2021-04-29,Mississippi,Jackson,621 Houston Ave,0,1,0,0,1,,32.310183133984,-90.226562292711,2021,4,1,False,False
 1990735,2021-04-29,Mississippi,Jackson,995 S West St,1,0,0,1,1,,32.31124803352,-90.181995180456,2021,4,1,True,False
@@ -703,8 +703,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2004637,2021-05-14,Mississippi,Jackson,US-80 and Ellis Ave,0,1,0,0,0,,,,2021,5,1,False,False
 2004962,2021-05-14,Mississippi,Jackson,3200 block of Lynch St,1,1,0,1,0,,32.297767369333,-90.235581833373,2021,5,2,True,False
 2006909,2021-05-17,Mississippi,Jackson,1700 block of  Hwy-80 W,0,2,0,0,0,,32.286910941767,-90.211844207551,2021,5,2,False,False
-2009326,2021-05-19,Mississippi,Jackson,225 W McDowell Rd,1,0,0,0,1,,32.268374802645,-90.220765471882,2021,5,1,True,False
 2009357,2021-05-19,Mississippi,Jackson,1000 block of W Capitol St,0,1,0,0,0,,32.306187098134,-90.199832367107,2021,5,1,False,False
+2009326,2021-05-19,Mississippi,Jackson,225 W McDowell Rd,1,0,0,0,1,,32.268374802645,-90.220765471882,2021,5,1,True,False
 2015638,2021-05-25,Mississippi,Jackson,4125 Sunset Dr,0,1,0,0,0,,,,2021,5,1,False,False
 2018828,2021-05-27,Mississippi,Jackson,4200 block of Sunset Dr,1,0,0,0,2,,32.350521568833,-90.222782262671,2021,5,1,True,False
 2019967,2021-05-30,Mississippi,Jackson,Bailey Ave,1,0,0,0,0,,,,2021,5,1,True,False
@@ -726,8 +726,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2045945,2021-06-26,Mississippi,Jackson,Houston Ave,0,2,0,0,0,,,,2021,6,2,False,False
 2047219,2021-06-27,Mississippi,Jackson,5400 block of Clinton Blvd,1,0,0,0,0,,32.333671532495,-90.269911104057,2021,6,1,True,False
 2048122,2021-06-28,Mississippi,Jackson,1600 block of Oakland Ave,0,1,1,1,0,,32.337216874692,-90.20222464381,2021,6,1,False,False
-2050057,2021-06-30,Mississippi,Jackson,915 Ellis Ave,0,1,0,0,2,,32.306941241774,-90.227841616839,2021,6,1,False,False
 2050045,2021-06-30,Mississippi,Jackson,3100 block of Terry Rd,1,0,0,0,1,,32.258791322906,-90.221500524062,2021,6,1,True,False
+2050057,2021-06-30,Mississippi,Jackson,915 Ellis Ave,0,1,0,0,2,,32.306941241774,-90.227841616839,2021,6,1,False,False
 2054188,2021-07-05,Mississippi,Jackson,2300 block of Hickory Dr,0,1,0,0,0,,32.274510389429,-90.257193343603,2021,7,1,False,False
 2054162,2021-07-05,Mississippi,Jackson,1264 High St,0,1,0,0,0,,32.303459070013,-90.170390860308,2021,7,1,False,False
 2054151,2021-07-05,Mississippi,Jackson,2700 block of Terry Rd,1,0,0,0,0,,32.270608390313,-90.217389931709,2021,7,1,True,False
@@ -739,8 +739,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2060552,2021-07-12,Mississippi,Jackson,Parkway Ave,0,2,0,0,0,,,,2021,7,2,False,False
 2061561,2021-07-13,Mississippi,Jackson,O Ferrell Ave,0,1,0,0,0,,,,2021,7,1,False,False
 2063620,2021-07-15,Mississippi,Jackson,Downing St,0,1,0,0,0,,,,2021,7,1,False,False
-2064585,2021-07-16,Mississippi,Jackson,703 Lindsey Dr,1,0,1,0,0,,32.311920810452,-90.236794840153,2021,7,1,True,False
 2064908,2021-07-16,Mississippi,Jackson,1021 Palmyra St,1,0,0,0,0,,32.312784757736,-90.195807535263,2021,7,1,True,False
+2064585,2021-07-16,Mississippi,Jackson,703 Lindsey Dr,1,0,1,0,0,,32.311920810452,-90.236794840153,2021,7,1,True,False
 2067664,2021-07-18,Mississippi,Jackson,1165 Big Creek Rd,1,0,0,0,0,,32.215813412563,-90.321647033969,2021,7,1,True,False
 2067629,2021-07-18,Mississippi,Jackson,1400 block of Clark St,1,0,0,0,0,,,,2021,7,1,True,False
 2070969,2021-07-21,Mississippi,Jackson,Woody Dr,0,0,0,0,1,,,,2021,7,0,False,False
@@ -762,8 +762,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2091858,2021-08-14,Mississippi,Jackson,210 Parcel Dr,1,0,0,0,0,,32.267337198805,-90.204742686402,2021,8,1,True,False
 2095151,2021-08-19,Mississippi,Jackson,Maple St and Rondo St,0,1,0,0,1,,32.317860087209,-90.198696240108,2021,8,1,False,False
 2096343,2021-08-20,Mississippi,Jackson,N West St and E Woodrow Wilson Ave,1,0,0,0,1,,32.326761084727,-90.182131744159,2021,8,1,True,False
-2097761,2021-08-22,Mississippi,Jackson,359 E Fortification St,2,0,0,0,2,,32.312168792093,-90.182900951012,2021,8,2,True,False
 2097767,2021-08-22,Mississippi,Jackson,1800 block of Lincoln Ave,1,0,0,0,1,,32.291467391085,-90.211441665383,2021,8,1,True,False
+2097761,2021-08-22,Mississippi,Jackson,359 E Fortification St,2,0,0,0,2,,32.312168792093,-90.182900951012,2021,8,2,True,False
 2098502,2021-08-23,Mississippi,Jackson,5035 I-55 N Frontage Rd,1,0,0,0,0,,,,2021,8,1,True,False
 2100498,2021-08-26,Mississippi,Jackson,W Capitol St and S Clifton St,1,0,0,0,1,,,,2021,8,1,True,False
 2101964,2021-08-27,Mississippi,Jackson,N West St and E Fortification St,0,2,0,0,0,,32.312226087736,-90.181762745027,2021,8,2,False,False
@@ -787,8 +787,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2132719,2021-10-04,Mississippi,Jackson,1900 block of Shady Lane Dr,1,0,0,0,0,,32.282119885963,-90.237184459765,2021,10,1,True,False
 2132746,2021-10-04,Mississippi,Jackson,US-80 and S Gallatin St,1,1,0,0,0,,,,2021,10,2,True,False
 2136763,2021-10-09,Mississippi,Jackson,US-51 and Yandell Rd,0,0,1,0,0,,,,2021,10,0,False,False
-2140650,2021-10-12,Mississippi,Jackson,1500 block of Cox St,1,0,0,0,1,,32.289360389273,-90.21018051504,2021,10,1,True,False
 2139043,2021-10-12,Mississippi,Jackson,,1,0,0,0,0,,,,2021,10,1,True,False
+2140650,2021-10-12,Mississippi,Jackson,1500 block of Cox St,1,0,0,0,1,,32.289360389273,-90.21018051504,2021,10,1,True,False
 2141402,2021-10-14,Mississippi,Jackson,1070 Raymond Rd,1,0,0,0,1,,32.284195471592,-90.237648634143,2021,10,1,True,False
 2142360,2021-10-15,Mississippi,Jackson,N State St and Beasley Rd,1,0,0,0,0,,32.385693658072,-90.157989389204,2021,10,1,True,False
 2143605,2021-10-17,Mississippi,Jackson,3243 Medgar Evers Blvd,3,3,0,0,1,,32.371520067036,-90.249156005064,2021,10,6,True,True
@@ -800,8 +800,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2154952,2021-10-29,Mississippi,Jackson,2315 McFadden Rd,0,0,1,0,0,,32.274132914847,-90.236408920999,2021,10,0,False,False
 2155874,2021-10-30,Mississippi,Jackson,100 block of Cedars of Lebanon,0,1,0,0,1,,32.373663370029,-90.165206906586,2021,10,1,False,False
 2158496,2021-11-02,Mississippi,Jackson,Beasley Rd,0,1,0,0,1,,,,2021,11,1,False,False
-2158472,2021-11-03,Mississippi,Jackson,Thousand Oaks Dr,0,1,0,0,0,,,,2021,11,1,False,False
 2159436,2021-11-03,Mississippi,Jackson,Curtis St and Windsor Dr,1,2,0,0,0,,32.333808086277,-90.261268722194,2021,11,3,True,False
+2158472,2021-11-03,Mississippi,Jackson,Thousand Oaks Dr,0,1,0,0,0,,,,2021,11,1,False,False
 2160988,2021-11-06,Mississippi,Jackson,Shepwood Dr,0,2,0,0,0,,,,2021,11,2,False,False
 2162265,2021-11-08,Mississippi,Jackson,Capitol St,1,0,0,0,1,,,,2021,11,1,True,False
 2165085,2021-11-10,Mississippi,Jackson,100 block of Culbertson Ave,0,1,0,0,0,,32.321519668305,-90.228855077548,2021,11,1,False,False
@@ -812,10 +812,10 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2170517,2021-11-18,Mississippi,Jackson,2100 Raymond Rd,1,0,0,0,3,,32.271967337721,-90.270261032491,2021,11,1,True,False
 2170199,2021-11-18,Mississippi,Jackson,1000 block of Lanier Ave,0,1,0,0,0,,32.319357382811,-90.204329365831,2021,11,1,False,False
 2172690,2021-11-21,Mississippi,Jackson,W McDowell Rd,0,1,0,0,1,,,,2021,11,1,False,False
-2174656,2021-11-24,Mississippi,Jackson,715 W McDowell Rd,1,0,0,0,0,,32.268410802914,-90.228045339928,2021,11,1,True,False
-2174991,2021-11-24,Mississippi,Jackson,5597 Robinson Rd Ext,0,2,0,0,0,,32.271419818993,-90.26083475792,2021,11,2,False,False
-2174645,2021-11-24,Mississippi,Jackson,100 block of Cedar Ln,0,1,0,0,0,,32.264907497005,-90.219301383965,2021,11,1,False,False
 2175340,2021-11-24,Mississippi,Jackson,2119 Woodland Way,0,1,0,0,0,,32.287532479152,-90.277217991727,2021,11,1,False,False
+2174645,2021-11-24,Mississippi,Jackson,100 block of Cedar Ln,0,1,0,0,0,,32.264907497005,-90.219301383965,2021,11,1,False,False
+2174991,2021-11-24,Mississippi,Jackson,5597 Robinson Rd Ext,0,2,0,0,0,,32.271419818993,-90.26083475792,2021,11,2,False,False
+2174656,2021-11-24,Mississippi,Jackson,715 W McDowell Rd,1,0,0,0,0,,32.268410802914,-90.228045339928,2021,11,1,True,False
 2175701,2021-11-25,Mississippi,Jackson,Overstreet Ave,0,1,0,0,0,,,,2021,11,1,False,False
 2176054,2021-11-26,Mississippi,Jackson,Derrick Street,1,1,0,0,0,,,,2021,11,2,True,False
 2179715,2021-12-01,Mississippi,Jackson,1717 W Capitol St,1,0,0,0,0,,32.313434982645,-90.210097022566,2021,12,1,True,False
@@ -826,8 +826,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2186943,2021-12-10,Mississippi,Jackson,Hair St,0,1,0,0,0,,,,2021,12,1,False,False
 2190334,2021-12-11,Mississippi,Jackson,West St,2,0,0,0,0,,,,2021,12,2,True,False
 2187983,2021-12-11,Mississippi,Jackson,Dalton St and Winter St,1,0,0,0,0,,32.291346092996,-90.205824239561,2021,12,1,True,False
-2187930,2021-12-12,Mississippi,Jackson,866 Bratton St,3,0,0,0,0,,32.305039840804,-90.197351416589,2021,12,3,True,False
 2187985,2021-12-12,Mississippi,Jackson,100 block of Claiborne Ave,0,1,0,0,1,,32.318049964722,-90.222095444265,2021,12,1,False,False
+2187930,2021-12-12,Mississippi,Jackson,866 Bratton St,3,0,0,0,0,,32.305039840804,-90.197351416589,2021,12,3,True,False
 2188804,2021-12-13,Mississippi,Jackson,301 Elton Park Dr,1,0,0,0,0,,32.221665526045,-90.231487962471,2021,12,1,True,False
 2189863,2021-12-14,Mississippi,Jackson,2900 block of Woodburn Dr,0,0,1,1,0,,,,2021,12,0,False,False
 3391234,2021-12-15,Mississippi,Jackson,Beasley Rd and Brownlee Dr,1,0,0,0,5,,32.385000072772,-90.186082739998,2021,12,1,True,False
@@ -837,9 +837,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2201609,2021-12-31,Mississippi,Jackson,St. Charles St,0,1,0,0,0,,,,2021,12,1,False,False
 2201611,2021-12-31,Mississippi,Jackson,1900 block of Corley Ave,1,0,0,0,0,,32.336367379351,-90.206351048783,2021,12,1,True,False
 2204232,2022-01-01,Mississippi,Jackson,Old Canton Rd and Parkway Dr,0,1,0,0,0,,,,2022,1,1,False,False
-2205024,2022-01-04,Mississippi,Jackson,3207 W Capitol St,1,3,0,0,0,,32.321780251177,-90.226986460989,2022,1,4,True,True
-2204437,2022-01-04,Mississippi,Jackson,2620 US-80,0,1,0,2,2,,,,2022,1,1,False,False
 2204245,2022-01-04,Mississippi,Jackson,3016 W Northside Dr,1,0,0,0,1,,32.356046491588,-90.22513150899,2022,1,1,True,False
+2204437,2022-01-04,Mississippi,Jackson,2620 US-80,0,1,0,2,2,,,,2022,1,1,False,False
+2205024,2022-01-04,Mississippi,Jackson,3207 W Capitol St,1,3,0,0,0,,32.321780251177,-90.226986460989,2022,1,4,True,True
 2207714,2022-01-08,Mississippi,Jackson,3700 block of Lampton Ave,1,0,0,0,0,,32.352268862717,-90.193667671257,2022,1,1,True,False
 2207943,2022-01-09,Mississippi,Jackson,3800 block of Bishop Ave,1,0,0,0,1,,32.354124976878,-90.191519135035,2022,1,1,True,False
 2210841,2022-01-13,Mississippi,Jackson,1335 Ellis Ave,1,1,0,0,0,,32.29461815819,-90.227896249165,2022,1,2,True,False
@@ -875,8 +875,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2254189,2022-03-15,Mississippi,Jackson,600 block of Lindsey Dr,1,0,0,0,0,,32.31276369689,-90.236503231882,2022,3,1,True,False
 2254361,2022-03-15,Mississippi,Jackson,Rondo St,0,1,0,0,0,,,,2022,3,1,False,False
 2256806,2022-03-18,Mississippi,Jackson,1740 US-80,0,1,0,0,0,,,,2022,3,1,False,False
-2263334,2022-03-24,Mississippi,Jackson,112 Cedar Ln,0,1,0,0,0,,32.264878656657,-90.219068257913,2022,3,1,False,False
 2263339,2022-03-24,Mississippi,Jackson,700 block of W Monument St,0,1,0,0,0,,32.308546357534,-90.198613348171,2022,3,1,False,False
+2263334,2022-03-24,Mississippi,Jackson,112 Cedar Ln,0,1,0,0,0,,32.264878656657,-90.219068257913,2022,3,1,False,False
 2263325,2022-03-25,Mississippi,Jackson,Robinson St,0,1,0,0,0,,,,2022,3,1,False,False
 2269024,2022-04-02,Mississippi,Jackson,2900 block of Englewood St,1,0,0,0,1,,32.263848014,-90.212488716799,2022,4,1,True,False
 2275232,2022-04-04,Mississippi,Jackson,1255 N West St,0,0,0,1,0,,32.315409497553,-90.182018582635,2022,4,0,False,False
@@ -887,8 +887,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2276508,2022-04-12,Mississippi,Jackson,Fairmont Dr and W 32nd St,0,1,0,0,0,,,,2022,4,1,False,False
 2282640,2022-04-18,Mississippi,Jackson,5880 Ridgewood Rd,1,0,1,0,0,,,,2022,4,1,True,False
 2283871,2022-04-20,Mississippi,Jackson,1300 block of Johnston St,1,0,0,0,0,,32.343234377579,-90.197328556029,2022,4,1,True,False
-2286557,2022-04-22,Mississippi,Jackson,300 block of W Capitol St,1,2,0,0,1,,32.300824192133,-90.191527880712,2022,4,3,True,False
 2285386,2022-04-22,Mississippi,Jackson,Woody Dr,1,0,0,0,1,,,,2022,4,1,True,False
+2286557,2022-04-22,Mississippi,Jackson,300 block of W Capitol St,1,2,0,0,1,,32.300824192133,-90.191527880712,2022,4,3,True,False
 2287474,2022-04-23,Mississippi,Jackson,200 Rebelwood Dr,1,0,0,0,0,,32.26193023414,-90.220020716948,2022,4,1,True,False
 2288618,2022-04-25,Mississippi,Jackson,3208 Lynch St,0,1,0,0,0,,32.297770958719,-90.235827705714,2022,4,1,False,False
 2288604,2022-04-26,Mississippi,Jackson,Glen Erin St,1,0,0,0,0,,,,2022,4,1,True,False
@@ -899,8 +899,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2295338,2022-05-05,Mississippi,Jackson,Dorgan St and Gunda St,0,1,0,0,0,,,,2022,5,1,False,False
 2298038,2022-05-06,Mississippi,Jackson,West Highland Dr,1,0,0,0,0,,,,2022,5,1,True,False
 2298033,2022-05-06,Mississippi,Jackson,Woody Dr,1,0,0,0,0,,,,2022,5,1,True,False
-2298041,2022-05-07,Mississippi,Jackson,6145 I-55,1,0,1,0,0,,,,2022,5,1,True,False
 2298044,2022-05-07,Mississippi,Jackson,5425 Clinton Blvd,1,0,0,0,0,,,,2022,5,1,True,False
+2298041,2022-05-07,Mississippi,Jackson,6145 I-55,1,0,1,0,0,,,,2022,5,1,True,False
 2422597,2022-05-08,Mississippi,Jackson,105 St Francis Drive,0,2,0,0,0,,,,2022,5,2,False,False
 2297381,2022-05-08,Mississippi,Jackson,Woody Dr,0,1,0,0,0,,,,2022,5,1,False,False
 2298058,2022-05-08,Mississippi,Jackson,Ginger Dr,0,1,1,0,0,,,,2022,5,1,False,False
@@ -910,8 +910,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2304301,2022-05-16,Mississippi,Jackson,1605 N West St,1,0,0,0,1,,32.32051229434,-90.182270198614,2022,5,1,True,False
 2308408,2022-05-18,Mississippi,Jackson,Newport St,1,0,0,0,0,,,,2022,5,1,True,False
 2306440,2022-05-19,Mississippi,Jackson,Marydell St,1,0,0,0,0,,,,2022,5,1,True,False
-2308364,2022-05-21,Mississippi,Jackson,2700 block of Benwood Dr,0,1,0,0,0,,32.271753081976,-90.247314762759,2022,5,1,False,False
 2308347,2022-05-21,Mississippi,Jackson,Ashwood St,0,1,0,0,1,,,,2022,5,1,False,False
+2308364,2022-05-21,Mississippi,Jackson,2700 block of Benwood Dr,0,1,0,0,0,,32.271753081976,-90.247314762759,2022,5,1,False,False
 2309172,2022-05-21,Mississippi,Jackson,4634 Village Dr,0,0,1,0,0,,32.376391593354,-90.185153904806,2022,5,0,False,False
 2309870,2022-05-22,Mississippi,Jackson,3800 block of Cromwell St,0,1,0,0,0,,32.344815063208,-90.216737951145,2022,5,1,False,False
 2312635,2022-05-25,Mississippi,Jackson,Rickay Dr and Cooper Rd,0,1,0,0,0,,32.253483102054,-90.236869733083,2022,5,1,False,False
@@ -937,8 +937,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2353756,2022-07-04,Mississippi,Jackson,Tara Rd,0,1,0,0,1,,,,2022,7,1,False,False
 2354787,2022-07-06,Mississippi,Jackson,Prentiss St,0,1,0,0,0,,,,2022,7,1,False,False
 2354783,2022-07-08,Mississippi,Jackson,Hanging Moss Rd,0,3,0,0,0,,,,2022,7,3,False,False
-2354971,2022-07-09,Mississippi,Jackson,Old Canton Rd,0,0,0,1,0,,,,2022,7,0,False,False
 2356545,2022-07-09,Mississippi,Jackson,2804 Suncrest Dr,1,0,0,0,0,,32.267070645025,-90.261241734276,2022,7,1,True,False
+2354971,2022-07-09,Mississippi,Jackson,Old Canton Rd,0,0,0,1,0,,,,2022,7,0,False,False
 2358053,2022-07-11,Mississippi,Jackson,Fairway St and Suncrest Dr,0,4,0,0,1,,32.256849102248,-90.260458726473,2022,7,4,False,True
 2359062,2022-07-12,Mississippi,Jackson,W Capitol St and O Ferrell Ave,0,2,0,0,0,,32.322810087288,-90.227815731901,2022,7,2,False,False
 2359059,2022-07-12,Mississippi,Jackson,Bienville Dr,0,2,0,0,0,,,,2022,7,2,False,False
@@ -985,8 +985,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2437249,2022-10-12,Mississippi,Jackson,Hickory Dr,1,0,0,0,0,,,,2022,10,1,True,False
 2439822,2022-10-16,Mississippi,Jackson,Newton St and Lynch St,1,0,0,0,0,,32.297637092195,-90.219184735584,2022,10,1,True,False
 2440255,2022-10-18,Mississippi,Jackson,2800 block of Greenwood Ave,1,0,0,0,0,,32.268318433362,-90.214021400312,2022,10,1,True,False
-2445133,2022-10-23,Mississippi,Jackson,200 block of Parcel Dr,1,0,0,0,0,,32.267234802808,-90.204745931351,2022,10,1,True,False
 2445135,2022-10-23,Mississippi,Jackson,300 block of Audubon Pl,1,0,0,0,2,,32.346345762511,-90.179441965942,2022,10,1,True,False
+2445133,2022-10-23,Mississippi,Jackson,200 block of Parcel Dr,1,0,0,0,0,,32.267234802808,-90.204745931351,2022,10,1,True,False
 2445151,2022-10-24,Mississippi,Jackson,,1,0,0,0,0,,,,2022,10,1,True,False
 2445139,2022-10-24,Mississippi,Jackson,Terry Rd and Donna Ave,1,0,0,0,0,,,,2022,10,1,True,False
 2446419,2022-10-26,Mississippi,Jackson,Creston Ave and Gretchen St,0,1,0,0,0,,32.244996103361,-90.224737736838,2022,10,1,False,False
@@ -1010,8 +1010,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2489414,2022-12-23,Mississippi,Jackson,3841 Warner Ave,1,1,0,0,0,,32.345942550522,-90.211147226799,2022,12,2,True,False
 2491238,2022-12-26,Mississippi,Jackson,I-55 Frontage Rd,0,2,0,1,1,,,,2022,12,2,False,False
 2495968,2023-01-03,Mississippi,Jackson,Earle St,1,0,0,0,0,,,,2023,1,1,True,False
-2495963,2023-01-04,Mississippi,Jackson,E Monument St and N Farish St,0,3,0,0,0,,32.308527088768,-90.188647743343,2023,1,3,False,False
 2495693,2023-01-04,Mississippi,Jackson,Meadow Ln and McClure Rd,1,0,0,0,1,,32.241018104591,-90.235330734157,2023,1,1,True,False
+2495963,2023-01-04,Mississippi,Jackson,E Monument St and N Farish St,0,3,0,0,0,,32.308527088768,-90.188647743343,2023,1,3,False,False
 2497835,2023-01-07,Mississippi,Jackson,Winter St and University Blvd,0,1,0,0,0,,,,2023,1,1,False,False
 2497827,2023-01-07,Mississippi,Jackson,Queen Mary Ln,0,1,0,0,0,,,,2023,1,1,False,False
 2499202,2023-01-08,Mississippi,Jackson,3000 block of Wabash St,1,0,0,0,0,,,,2023,1,1,True,False
@@ -1044,9 +1044,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2536099,2023-02-28,Mississippi,Jackson,1253 Wood Village Dr,0,1,0,0,0,,32.294129685687,-90.241595634284,2023,2,1,False,False
 2538946,2023-03-03,Mississippi,Jackson,Maria Dr,0,1,0,0,0,,,,2023,3,1,False,False
 2541413,2023-03-07,Mississippi,Jackson,Magnolia St,0,1,0,0,0,,,,2023,3,1,False,False
-2545636,2023-03-13,Mississippi,Jackson,6390 Ridgewood Rd,0,3,0,0,0,,32.399057534844,-90.140695283721,2023,3,3,False,False
 2546405,2023-03-13,Mississippi,Jackson,3000 block of Bowers St,0,2,0,0,0,,,,2023,3,2,False,False
 2545627,2023-03-13,Mississippi,Jackson,4414 Medgar Evers Blvd,0,3,0,0,0,,32.350248046825,-90.225495572508,2023,3,3,False,False
+2545636,2023-03-13,Mississippi,Jackson,6390 Ridgewood Rd,0,3,0,0,0,,32.399057534844,-90.140695283721,2023,3,3,False,False
 2546741,2023-03-15,Mississippi,Jackson,650 Agape Dr,1,0,0,0,3,,,,2023,3,1,True,False
 2548410,2023-03-16,Mississippi,Jackson,1133 Raymond Rd,0,1,0,0,0,,32.284094989801,-90.238287463774,2023,3,1,False,False
 2549358,2023-03-18,Mississippi,Jackson,4000 block of Rainey Rd,1,0,0,0,2,,32.23486686244,-90.253516133667,2023,3,1,True,False
@@ -1055,11 +1055,11 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2561965,2023-03-31,Mississippi,Jackson,Parkway Ave and Walter Dutch Welch Dr,0,1,0,0,0,,32.347812081323,-90.207651236081,2023,3,1,False,False
 2562932,2023-03-31,Mississippi,Jackson,Ellis Ave and John R Lynch St,1,0,0,0,0,,,,2023,3,1,True,False
 2561345,2023-03-31,Mississippi,Jackson,1533 Raymond Rd,0,0,0,1,1,,32.28169935006,-90.254111071083,2023,3,0,False,False
-2567396,2023-04-08,Mississippi,Jackson,2620 US-80,1,0,0,0,0,,,,2023,4,1,True,False
 2568022,2023-04-08,Mississippi,Jackson,1714 US-80,1,0,0,0,0,,,,2023,4,1,True,False
+2567396,2023-04-08,Mississippi,Jackson,2620 US-80,1,0,0,0,0,,,,2023,4,1,True,False
 2570681,2023-04-12,Mississippi,Jackson,2607 Raymond Rd,0,0,0,0,0,,32.262310722374,-90.281202229282,2023,4,0,False,False
-2571988,2023-04-14,Mississippi,Jackson,1400 Murrah Dr,0,0,0,0,1,,32.326510980001,-90.171311825453,2023,4,0,False,False
 2573235,2023-04-14,Mississippi,Jackson,5850 Ridgewood Rd,0,2,0,0,0,,32.387656156887,-90.141758851597,2023,4,2,False,False
+2571988,2023-04-14,Mississippi,Jackson,1400 Murrah Dr,0,0,0,0,1,,32.326510980001,-90.171311825453,2023,4,0,False,False
 2604285,2023-04-17,Mississippi,Jackson,Woodrow Wilson Ave and N Mill St,1,0,0,0,1,,32.326761084906,-90.186816242881,2023,4,1,True,False
 2574808,2023-04-17,Mississippi,Jackson,Northside Dr,0,1,0,0,1,,,,2023,4,1,False,False
 2580987,2023-04-24,Mississippi,Jackson,I-55 and Old Byram Rd,1,1,1,0,0,,,,2023,4,2,True,False
@@ -1070,8 +1070,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2605911,2023-05-05,Mississippi,Jackson,Cedarhurst Dr,1,0,0,0,0,,,,2023,5,1,True,False
 2590503,2023-05-06,Mississippi,Jackson,2975 W McDowell Rd,1,0,0,0,1,,32.270326149739,-90.264642930334,2023,5,1,True,False
 2593780,2023-05-09,Mississippi,Jackson,Raymond Rd and Shady Ln,0,1,0,0,0,,32.284119095694,-90.237256731366,2023,5,1,False,False
-2594658,2023-05-10,Mississippi,Jackson,Morton Ave,0,1,0,0,0,,,,2023,5,1,False,False
 2594143,2023-05-10,Mississippi,Jackson,200 Rebel Woods Dr,1,0,0,0,1,,32.26193023414,-90.220020716948,2023,5,1,True,False
+2594658,2023-05-10,Mississippi,Jackson,Morton Ave,0,1,0,0,0,,,,2023,5,1,False,False
 2608317,2023-05-11,Mississippi,Jackson,Long St and Bon Air St,1,0,0,0,1,,32.318022087681,-90.211989236472,2023,5,1,True,False
 2816257,2023-05-21,Mississippi,Jackson,McFadden Rd and W McDowell Rd,0,1,0,0,0,,32.268486098858,-90.234921232826,2023,5,1,False,False
 2605825,2023-05-21,Mississippi,Jackson,Wabash St and Ohio St,1,0,1,0,0,,32.348433081236,-90.208753735747,2023,5,1,True,False
@@ -1108,8 +1108,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2677658,2023-08-10,Mississippi,Jackson,I-20 and US-80,1,0,0,0,0,,,,2023,8,1,True,False
 2679539,2023-08-11,Mississippi,Jackson,1100 block of Garden Park Dr,0,0,1,0,0,,32.277343953238,-90.236715967237,2023,8,0,False,False
 2679546,2023-08-11,Mississippi,Jackson,North Hill Pkwy,0,2,0,0,0,,,,2023,8,2,False,False
-2683381,2023-08-15,Mississippi,Jackson,Forest Ave,1,0,0,0,0,,,,2023,8,1,True,False
 2683353,2023-08-15,Mississippi,Jackson,200 block of Segura Ave,1,0,0,0,1,,32.324084605812,-90.23593219907,2023,8,1,True,False
+2683381,2023-08-15,Mississippi,Jackson,Forest Ave,1,0,0,0,0,,,,2023,8,1,True,False
 2686168,2023-08-20,Mississippi,Jackson,2971 W Northside Dr,1,0,0,0,1,,32.355917784505,-90.222470234544,2023,8,1,True,False
 2690189,2023-08-24,Mississippi,Jackson,1636 Raymond Rd,1,0,0,0,0,,32.280104987157,-90.258024635306,2023,8,1,True,False
 2692898,2023-08-28,Mississippi,Jackson,S Gallatin St and W Rankin St,0,1,0,0,0,,32.286450093523,-90.192891243348,2023,8,1,False,False
@@ -1145,8 +1145,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2754310,2023-11-13,Mississippi,Jackson,1300 block of Hair St,1,0,0,0,0,,32.28858638932,-90.207179015321,2023,11,1,True,False
 2769570,2023-12-01,Mississippi,Jackson,1636 Raymond Rd,0,1,0,0,0,,32.280104987157,-90.258024635306,2023,12,1,False,False
 2768770,2023-12-01,Mississippi,Jackson,3000 block of Camilla Ln,0,1,0,0,0,,,,2023,12,1,False,False
-2777476,2023-12-12,Mississippi,Jackson,5800 block of Turner St,1,0,0,0,0,,32.305320382979,-90.285047767573,2023,12,1,True,False
 2777471,2023-12-12,Mississippi,Jackson,Sanford St and Jayne Ave,0,1,0,0,1,,32.315169089171,-90.235551230194,2023,12,1,False,False
+2777476,2023-12-12,Mississippi,Jackson,5800 block of Turner St,1,0,0,0,0,,32.305320382979,-90.285047767573,2023,12,1,True,False
 2777837,2023-12-13,Mississippi,Jackson,Robinson St and Inge St,1,0,0,0,0,,32.304837089969,-90.200046240427,2023,12,1,True,False
 2780411,2023-12-15,Mississippi,Jackson,4800 Hwy 18 W,1,2,0,0,0,,,,2023,12,3,True,False
 2780562,2023-12-17,Mississippi,Jackson,Ellis Ave and Saint Charles St,1,2,0,0,0,,32.312460089437,-90.227739232468,2023,12,3,True,False
@@ -1279,8 +1279,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2991135,2024-08-08,Mississippi,Jackson,5300 block of I-55 N Frontage Rd,1,0,0,0,3,,,,2024,8,1,True,False
 2995442,2024-08-13,Mississippi,Jackson,2500 block of Belvedere Dr,1,0,0,0,1,,32.270803448076,-90.227160112543,2024,8,1,True,False
 2997679,2024-08-17,Mississippi,Jackson,208 W Capitol St,1,5,0,0,1,,,,2024,8,6,True,True
-3001661,2024-08-20,Mississippi,Jackson,Palm St and Ridgeland Dr,0,3,0,1,1,,32.25501310249,-90.256759727578,2024,8,3,False,False
 3001529,2024-08-20,Mississippi,Jackson,300 block of Maple St,0,6,0,0,0,,32.318043382703,-90.194336039307,2024,8,6,False,True
+3001661,2024-08-20,Mississippi,Jackson,Palm St and Ridgeland Dr,0,3,0,1,1,,32.25501310249,-90.256759727578,2024,8,3,False,False
 3004121,2024-08-23,Mississippi,Jackson,Raymond Rd,0,0,0,0,1,,,,2024,8,0,False,False
 3005670,2024-08-25,Mississippi,Jackson,Woodrow Wilson Ave,0,1,0,0,0,,,,2024,8,1,False,False
 3011983,2024-08-31,Mississippi,Jackson,386 Raymond Rd,1,0,0,0,1,,32.283102433287,-90.218116690584,2024,8,1,True,False
@@ -1290,8 +1290,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3070064,2024-09-05,Mississippi,Jackson,TV Rd and Maddox Rd,1,0,0,0,1,,32.282616097915,-90.287472217751,2024,9,1,True,False
 3018304,2024-09-08,Mississippi,Jackson,Jamestown Way,0,0,0,1,0,,,,2024,9,0,False,False
 3020788,2024-09-09,Mississippi,Jackson,593 Beasley Rd,1,0,0,0,0,,32.385368238025,-90.172027590712,2024,9,1,True,False
-3023678,2024-09-13,Mississippi,Jackson,150 Woody Dr,1,0,0,0,0,,32.25742839645,-90.224180687636,2024,9,1,True,False
 3026997,2024-09-13,Mississippi,Jackson,4850 Watkins Dr,1,0,0,0,2,,32.368783295505,-90.192710903011,2024,9,1,True,False
+3023678,2024-09-13,Mississippi,Jackson,150 Woody Dr,1,0,0,0,0,,32.25742839645,-90.224180687636,2024,9,1,True,False
 3027001,2024-09-15,Mississippi,Jackson,3200 block of W Capitol St,1,0,0,0,0,,32.321809922316,-90.226845335546,2024,9,1,True,False
 3024787,2024-09-15,Mississippi,Jackson,3100 block of Booker St,1,0,0,0,3,,32.301447387669,-90.234125016908,2024,9,1,True,False
 3027826,2024-09-18,Mississippi,Jackson,Alexander St and Lamar St,1,0,0,0,0,,32.316231087001,-90.184336744113,2024,9,1,True,False
@@ -1390,8 +1390,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3247941,2025-06-27,Mississippi,Jackson,Rainey Rd,0,1,0,0,0,,,,2025,6,1,False,False
 3249013,2025-06-28,Mississippi,Jackson,N State St,0,1,0,0,0,,,,2025,6,1,False,False
 3251113,2025-07-02,Mississippi,Jackson,Vernon Dr and Hickory Dr,0,1,0,0,0,,32.273031098759,-90.257227726503,2025,7,1,False,False
-3253654,2025-07-04,Mississippi,Jackson,AME Logan St and John R Lynch St,1,0,0,0,1,,,,2025,7,1,True,False
 3253652,2025-07-04,Mississippi,Jackson,905 Cooper Rd,1,0,0,0,2,,32.253920806818,-90.251458478901,2025,7,1,True,False
+3253654,2025-07-04,Mississippi,Jackson,AME Logan St and John R Lynch St,1,0,0,0,1,,,,2025,7,1,True,False
 3254544,2025-07-06,Mississippi,Jackson,115 Wilmington St,2,0,0,0,0,,32.281885474101,-90.209394133373,2025,7,2,True,False
 3263287,2025-07-15,Mississippi,Jackson,3700 block of Hancock St,0,1,0,0,0,,32.342000720911,-90.221492146852,2025,7,1,False,False
 3267871,2025-07-20,Mississippi,Jackson,O'Bannon Dr and Sunset Dr,1,0,0,0,1,,32.348631081725,-90.222672231939,2025,7,1,True,False
@@ -1403,8 +1403,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3276402,2025-07-31,Mississippi,Jackson,3150 Robinson St,1,0,0,0,1,,32.30649638683,-90.239673779363,2025,7,1,True,False
 3277165,2025-07-31,Mississippi,Jackson,TV Rd and Gertrude Dr,0,1,0,0,1,,32.283462097064,-90.269710722549,2025,7,1,False,False
 3277128,2025-08-01,Mississippi,Jackson,4436 Robinson St,1,0,0,0,2,,32.299709162736,-90.2588557665,2025,8,1,True,False
-3278335,2025-08-02,Mississippi,Jackson,4500 block of Redwood Dr,0,0,0,1,5,,32.253849381396,-90.295645349739,2025,8,0,False,False
 3277811,2025-08-02,Mississippi,Jackson,Taylor St,0,2,0,0,0,,,,2025,8,2,False,False
+3278335,2025-08-02,Mississippi,Jackson,4500 block of Redwood Dr,0,0,0,1,5,,32.253849381396,-90.295645349739,2025,8,0,False,False
 3278327,2025-08-03,Mississippi,Jackson,3600 block of Lampton Ave,1,0,0,0,0,,32.35029274292,-90.193622840257,2025,8,1,True,False
 3279487,2025-08-04,Mississippi,Jackson,4000 block of W Capitol St,0,1,0,0,0,,32.326919632917,-90.233388762484,2025,8,1,False,False
 3283785,2025-08-09,Mississippi,Jackson,2800 block of Greenview Dr,0,1,0,0,0,,,,2025,8,1,False,False
@@ -1416,8 +1416,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3300493,2025-08-31,Mississippi,Jackson,,0,1,0,0,0,,,,2025,8,1,False,False
 3299956,2025-08-31,Mississippi,Jackson,5308 Clinton Blvd,0,2,0,0,0,,32.332506882427,-90.266178065029,2025,8,2,False,False
 3299959,2025-08-31,Mississippi,Jackson,5801 Ridgewood Rd,1,0,0,0,3,,32.384283366936,-90.141983099763,2025,8,1,True,False
-3301589,2025-09-04,Mississippi,Jackson,4300 block of Dixie Dr,0,1,0,0,0,,32.301045187018,-90.257383789254,2025,9,1,False,False
 3301583,2025-09-04,Mississippi,Jackson,5330 N State St,0,1,0,0,0,,32.370336704356,-90.167197518906,2025,9,1,False,False
+3301589,2025-09-04,Mississippi,Jackson,4300 block of Dixie Dr,0,1,0,0,0,,32.301045187018,-90.257383789254,2025,9,1,False,False
 3321377,2025-09-05,Mississippi,Jackson,Woodville Dr,0,1,0,0,0,,,,2025,9,1,False,False
 3301581,2025-09-05,Mississippi,Jackson,Lincoln Ave and Jones Ave,0,1,0,0,0,,32.291526093174,-90.211507738001,2025,9,1,False,False
 3304803,2025-09-09,Mississippi,Jackson,2400 block of Coronet Pl,1,0,0,0,1,,32.273135359593,-90.224383663047,2025,9,1,True,False
@@ -1452,8 +1452,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3362586,2025-11-24,Mississippi,Jackson,5700 block of Gault St,1,0,0,0,0,,32.311383387503,-90.284030010206,2025,11,1,True,False
 3365562,2025-11-28,Mississippi,Jackson,Northview Dr,0,1,0,0,0,,,,2025,11,1,False,False
 3367430,2025-12-01,Mississippi,Jackson,200 block of Sollitt St,1,0,0,0,0,,32.321932070247,-90.233995263736,2025,12,1,True,False
-3369585,2025-12-05,Mississippi,Jackson,2800 block of Donaldson Dr,1,0,0,0,0,,32.267259564638,-90.216488088528,2025,12,1,True,False
 3369589,2025-12-05,Mississippi,Jackson,2800 block of Revere St,1,1,0,0,1,,32.264726014642,-90.24089211135,2025,12,2,True,False
+3369585,2025-12-05,Mississippi,Jackson,2800 block of Donaldson Dr,1,0,0,0,0,,32.267259564638,-90.216488088528,2025,12,1,True,False
 3373702,2025-12-07,Mississippi,Jackson,Meadowbrook Rd,1,0,0,0,1,,,,2025,12,1,True,False
 3374299,2025-12-12,Mississippi,Jackson,Voorhees Ave,0,1,0,0,1,,,,2025,12,1,False,False
 3375764,2025-12-14,Mississippi,Jackson,200 Rebel Woods Dr,1,0,0,0,0,,32.26193023414,-90.220020716948,2025,12,1,True,False
@@ -1539,8 +1539,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3497257,2026-06-27,Mississippi,Jackson,341 Queen Alexandria Ln,3,0,0,0,4,,32.339913116871,-90.270481927558,2026,6,3,True,False
 3498626,2026-06-30,Mississippi,Jackson,4414 Medgar Evers Blvd,1,0,0,0,0,,32.350248046825,-90.225495572508,2026,6,1,True,False
 3501601,2026-07-05,Mississippi,Jackson,Newman Ave and Eminence Row,0,1,0,0,0,,32.34864008046,-90.189529740983,2026,7,1,False,False
-3503936,2026-07-07,Mississippi,Jackson,John R. Lynch St and Clifton St,0,1,0,0,0,,32.297511091282,-90.194497742327,2026,7,1,False,False
 3503931,2026-07-07,Mississippi,Jackson,Autumn St,0,1,0,0,0,,,,2026,7,1,False,False
+3503936,2026-07-07,Mississippi,Jackson,John R. Lynch St and Clifton St,0,1,0,0,0,,32.297511091282,-90.194497742327,2026,7,1,False,False
 3505303,2026-07-09,Mississippi,Jackson,20 N Hill Pkwy,0,3,0,0,3,,32.357471652733,-90.155158422296,2026,7,3,False,False
 3507518,2026-07-12,Mississippi,Jackson,100 block of Forest Hill Dr,1,0,0,0,0,,32.265606351346,-90.281037421469,2026,7,1,True,False
 3507909,2026-07-14,Mississippi,Jackson,E Pearl St and S President St,0,0,0,1,0,,32.29835709063,-90.181978745699,2026,7,0,False,False
@@ -1551,9 +1551,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3510787,2026-07-18,Mississippi,Jackson,1300 block of Collier Ave,1,0,0,0,0,,32.350317376094,-90.196977561059,2026,7,1,True,False
 3511746,2026-07-19,Mississippi,Jackson,1355 Hattiesburg St,1,0,0,0,0,,32.295524018869,-90.220137922204,2026,7,1,True,False
 3516162,2026-07-26,Mississippi,Jackson,300 block of Claiborne Ave,1,0,0,0,1,,32.316002792806,-90.222595437107,2026,7,1,True,False
+3518063,2026-07-29,Mississippi,Jackson,386 Raymond Rd,1,0,0,0,0,,32.283102433287,-90.218116690584,2026,7,1,True,False
 3518913,2026-07-29,Mississippi,Jackson,Fortification St,0,1,0,0,1,,,,2026,7,1,False,False
 3518902,2026-07-29,Mississippi,Jackson,791 W County Line Rd,1,0,0,0,0,,32.400148951117,-90.16845833541,2026,7,1,True,False
-3518063,2026-07-29,Mississippi,Jackson,386 Raymond Rd,1,0,0,0,0,,32.283102433287,-90.218116690584,2026,7,1,True,False
 3526175,2026-08-10,Mississippi,Jackson,200 block of Shady Pine Ln,0,1,0,0,0,,32.271981393202,-90.21842450072,2026,8,1,False,False
 3527787,2026-08-13,Mississippi,Jackson,1000 block of E County Line Rd,1,0,0,0,1,,,,2026,8,1,True,False
 3528965,2026-08-14,Mississippi,Jackson,1516 Booker St,0,1,0,0,0,,32.290008389146,-90.210381583019,2026,8,1,False,False
@@ -1563,3 +1563,16 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3532519,2026-08-20,Mississippi,Jackson,3000 block of Greenview Dr,1,0,0,0,0,,32.267758611682,-90.223285382444,2026,8,1,True,False
 3536678,2026-08-25,Mississippi,Jackson,900 block of Myrtlewood Dr,1,0,0,0,0,,32.275216936953,-90.230134758386,2026,8,1,True,False
 3538672,2026-08-29,Mississippi,Jackson,2636 S Gallatin St,0,2,0,0,0,,32.273810647726,-90.193043196617,2026,8,2,False,False
+3543220,2026-09-06,Mississippi,Jackson,800 block of N State St,0,2,0,0,0,,32.308750645125,-90.178550426965,2026,9,2,False,False
+3542623,2026-09-06,Mississippi,Jackson,3155 Terry Rd,1,0,0,0,3,,32.256018795207,-90.222826037584,2026,9,1,True,False
+3542626,2026-09-06,Mississippi,Jackson,Langley St and Robinson Rd,1,0,0,0,0,,32.296049990481,-90.261524983984,2026,9,1,True,False
+3541887,2026-09-06,Mississippi,Jackson,3540 Sunset Dr,1,1,0,0,0,,32.339486360562,-90.222690010787,2026,9,2,True,False
+3546498,2026-09-13,Mississippi,Jackson,1200 Wood Village Dr,0,1,0,0,0,,32.31514727557,-90.192810173237,2026,9,1,False,False
+3547351,2026-09-14,Mississippi,Jackson,1342 Fernwood Dr,0,1,0,0,0,,,,2026,9,1,False,False
+3548987,2026-09-17,Mississippi,Jackson,Downing St,0,1,0,0,0,,,,2026,9,1,False,False
+3549611,2026-09-19,Mississippi,Jackson,1000 block of Raymond Rd,0,0,0,1,1,,32.284116471443,-90.235401080621,2026,9,0,False,False
+3552417,2026-09-24,Mississippi,Jackson,2800 block of Woodside Dr,1,0,0,0,1,,32.2684735648,-90.245258894572,2026,9,1,True,False
+3553979,2026-09-26,Mississippi,Jackson,3249 Medgar Evers Blvd,1,0,0,0,1,,32.371429964074,-90.249055646368,2026,9,1,True,False
+3553966,2026-09-26,Mississippi,Jackson,200 block of Vine St,1,0,0,0,0,,32.392473462335,-90.150426174333,2026,9,1,True,False
+3554543,2026-09-27,Mississippi,Jackson,Capitol St and Gallatin St,0,1,0,0,0,,32.300919998323,-90.192687030118,2026,9,1,False,False
+3556570,2026-09-29,Mississippi,Jackson,Roseneath Ave,1,0,0,0,0,,,,2026,9,1,True,False
