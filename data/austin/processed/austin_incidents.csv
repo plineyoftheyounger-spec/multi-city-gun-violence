@@ -136,8 +136,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1410906,2019-05-29,Texas,Austin,N Mopac Expy,0,0,0,0,1,,,,2019,5,0,False,False
 1416278,2019-06-02,Texas,Austin,1605 E Oltorf St,0,0,0,0,1,,30.233226143002,-97.739362786354,2019,6,0,False,False
 1413575,2019-06-03,Texas,Austin,600 block of Red River St,0,1,0,0,0,,30.266545728085,-97.737229725748,2019,6,1,False,False
-1417716,2019-06-07,Texas,Austin,8220 TX-71,0,5,0,0,1,,30.246572326146,-97.887426347118,2019,6,5,False,True
 1418872,2019-06-07,Texas,Austin,4809 S Congress Ave,0,0,0,0,1,,30.213270732589,-97.769900155164,2019,6,0,False,False
+1417716,2019-06-07,Texas,Austin,8220 TX-71,0,5,0,0,1,,30.246572326146,-97.887426347118,2019,6,5,False,True
 1427753,2019-06-20,Texas,Austin,Manor Rd and Rogge Ln,0,1,0,0,0,,30.304587774921,-97.681312387537,2019,6,1,False,False
 1429628,2019-06-22,Texas,Austin,1730 E Oltorf St,0,1,0,0,0,,30.232781352919,-97.73786825691,2019,6,1,False,False
 1430340,2019-06-23,Texas,Austin,3600 block of Southridge Dr,1,0,0,0,1,,30.233628188543,-97.777755778929,2019,6,1,True,False
@@ -212,9 +212,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1586119,2020-01-01,Texas,Austin,China Rose Dr,0,0,0,0,0,,,,2020,1,0,False,False
 1585823,2020-01-01,Texas,Austin,302 E 6th St,0,2,0,0,0,,30.267419410229,-97.740271288585,2020,1,2,False,False
 1588936,2020-01-05,Texas,Austin,7900 block of San Felipe Blvd,0,1,0,0,1,,30.438184389864,-97.768595977226,2020,1,1,False,False
-1593752,2020-01-10,Texas,Austin,1190 Airport Blvd,0,1,0,0,0,,30.276428882915,-97.700040322385,2020,1,1,False,False
-1593746,2020-01-10,Texas,Austin,7800 block of Wynne Ln,0,1,0,0,0,,30.189737087362,-97.803054859889,2020,1,1,False,False
 1595412,2020-01-10,Texas,Austin,6905 Villita Avenida St,0,0,0,0,1,,30.231259987222,-97.691509124393,2020,1,0,False,False
+1593746,2020-01-10,Texas,Austin,7800 block of Wynne Ln,0,1,0,0,0,,30.189737087362,-97.803054859889,2020,1,1,False,False
+1593752,2020-01-10,Texas,Austin,1190 Airport Blvd,0,1,0,0,0,,30.276428882915,-97.700040322385,2020,1,1,False,False
 1594922,2020-01-11,Texas,Austin,5700 block of Manor Rd,0,1,0,0,0,,30.304665882239,-97.681337360836,2020,1,1,False,False
 1595910,2020-01-11,Texas,Austin,1600 block of E Parmer Ln,0,1,0,0,0,,30.390156254619,-97.652127666502,2020,1,1,False,False
 1593764,2020-01-11,Texas,Austin,,0,1,0,0,0,,,,2020,1,1,False,False
@@ -243,8 +243,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1646335,2020-03-26,Texas,Austin,Town Lake Cir and Elmont Dr,0,0,0,0,0,,30.239895789082,-97.721888880545,2020,3,0,False,False
 1647973,2020-03-29,Texas,Austin,8410 Garcreek Cir,0,1,0,0,0,,30.294393314897,-97.628974406189,2020,3,1,False,False
 1647798,2020-03-29,Texas,Austin,500 E Highland Mall Blvd,1,0,0,0,0,,30.328142183577,-97.710084718497,2020,3,1,True,False
-1658838,2020-04-13,Texas,Austin,Waller St and Haskell St,0,1,0,0,0,,30.255330786517,-97.734713876614,2020,4,1,False,False
 1674730,2020-04-13,Texas,Austin,600 block of Brushy St,0,0,0,0,1,,30.265502011796,-97.733602040246,2020,4,0,False,False
+1658838,2020-04-13,Texas,Austin,Waller St and Haskell St,0,1,0,0,0,,30.255330786517,-97.734713876614,2020,4,1,False,False
 1703668,2020-04-15,Texas,Austin (Bee Cave),,1,0,0,0,0,,,,2020,4,1,True,False
 1665515,2020-04-24,Texas,Austin,2601 S Pleasant Valley Rd,0,0,1,0,0,,30.225436635283,-97.728911739495,2020,4,0,False,False
 1666829,2020-04-27,Texas,Austin,5100 block of Little Creek Dr,0,2,0,0,0,,,,2020,4,2,False,False
@@ -258,8 +258,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1691488,2020-05-28,Texas,Austin,1050 Springdale Rd,1,0,0,0,1,,30.270780496016,-97.692282945102,2020,5,1,True,False
 1694852,2020-05-30,Texas,Austin,I-35 and E 8th St,0,2,0,0,0,,,,2020,5,2,False,False
 1694856,2020-05-30,Texas,Austin,715 E 8th St,0,1,0,0,0,,30.267905660203,-97.735097493788,2020,5,1,False,False
-1694854,2020-05-31,Texas,Austin,715 E 8th St,0,1,0,0,0,,30.267905660203,-97.735097493788,2020,5,1,False,False
 1697046,2020-05-31,Texas,Austin,715 E 8th St,0,1,0,0,0,,30.267905660203,-97.735097493788,2020,5,1,False,False
+1694854,2020-05-31,Texas,Austin,715 E 8th St,0,1,0,0,0,,30.267905660203,-97.735097493788,2020,5,1,False,False
 2074835,2020-06-08,Texas,Austin,5526 I-35,1,0,0,0,0,,,,2020,6,1,True,False
 1710447,2020-06-19,Texas,Austin,4600 Mueller Blvd,1,1,0,0,0,,30.298143685602,-97.707180944751,2020,6,2,True,False
 1710450,2020-06-20,Texas,Austin,3800 block of Alexandria Dr,1,0,0,0,1,,30.202257995772,-97.842971712979,2020,6,1,True,False
@@ -271,8 +271,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1725131,2020-07-05,Texas,Austin,E 7th St and Chicon St,0,3,0,0,0,,30.26257578464,-97.722113879401,2020,7,3,False,False
 1728763,2020-07-07,Texas,Austin,1403 S Lamar Blvd,0,1,0,0,0,,30.253122021898,-97.763296846147,2020,7,1,False,False
 1733819,2020-07-12,Texas,Austin,7114 N I-35,0,1,0,0,0,,30.332414770718,-97.704919254014,2020,7,1,False,False
-1737500,2020-07-13,Texas,Austin,2400 Wickersham Ln,1,0,0,0,1,,30.226032017107,-97.72383893289,2020,7,1,True,False
 1737491,2020-07-13,Texas,Austin,Sweeney Ln,0,1,0,0,0,,,,2020,7,1,False,False
+1737500,2020-07-13,Texas,Austin,2400 Wickersham Ln,1,0,0,0,1,,30.226032017107,-97.72383893289,2020,7,1,True,False
 1737470,2020-07-16,Texas,Austin,1200 block of Bonnie Brae St,0,0,1,1,0,,30.358626994855,-97.678476761792,2020,7,0,False,False
 1745155,2020-07-17,Texas,Austin,5300 block of Pleasant Valley Rd,0,0,0,0,0,,30.19498973999,-97.74486809223,2020,7,0,False,False
 1739774,2020-07-19,Texas,Austin,500 W Canyon Ridge Dr,1,0,0,0,0,,30.40320422205,-97.67457615132,2020,7,1,True,False
@@ -289,8 +289,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1789497,2020-08-19,Texas,Austin,5800 block of Mojave Dr,1,0,0,0,2,,30.209490233197,-97.790597850428,2020,8,1,True,False
 1769503,2020-08-20,Texas,Austin,8220 Research Blvd,0,1,0,0,0,,30.355395189085,-97.715536991669,2020,8,1,False,False
 1782355,2020-08-21,Texas,Austin,6400 block of E US-290 Service Rd,0,0,0,0,0,,30.23493105115,-97.862071847095,2020,8,0,False,False
-1772247,2020-08-22,Texas,Austin,5707 Manor Rd,1,0,0,0,1,,30.304663588215,-97.681186266402,2020,8,1,True,False
 1771934,2020-08-22,Texas,Austin,4500 block of E St Elmo Dr,0,0,0,0,1,,30.20612993119,-97.73881747913,2020,8,0,False,False
+1772247,2020-08-22,Texas,Austin,5707 Manor Rd,1,0,0,0,1,,30.304663588215,-97.681186266402,2020,8,1,True,False
 1774014,2020-08-24,Texas,Austin,1100 block of Terry Dr,0,1,0,0,0,,30.26771123552,-97.680471449523,2020,8,1,False,False
 1775833,2020-08-25,Texas,Austin,Eastfield Ave and Lott Ave,0,1,0,0,0,,30.277218780443,-97.685542387801,2020,8,1,False,False
 1775303,2020-08-25,Texas,Austin,6100 block of Manor Rd,0,0,0,0,1,,30.307853488901,-97.678503564888,2020,8,0,False,False
@@ -350,8 +350,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 1912845,2021-01-26,Texas,Austin,1912 W 35th St,1,0,1,0,0,,30.308778679357,-97.755532892696,2021,1,1,True,False
 1915646,2021-01-29,Texas,Austin,1126 Mearns Meadow Blvd,1,0,0,0,2,,,,2021,1,1,True,False
 1919214,2021-02-02,Texas,Austin,6103 Manor Rd,1,0,0,0,0,,30.30780892032,-97.678038224004,2021,2,1,True,False
-1919175,2021-02-03,Texas,Austin,2201 Willow Creek Dr,1,0,0,0,1,,30.23079956223,-97.730239003186,2021,2,1,True,False
 1920005,2021-02-03,Texas,Austin,4100 block of Balboa Ln,0,3,0,0,1,,30.415588222517,-97.725259109469,2021,2,3,False,False
+1919175,2021-02-03,Texas,Austin,2201 Willow Creek Dr,1,0,0,0,1,,30.23079956223,-97.730239003186,2021,2,1,True,False
 1921979,2021-02-06,Texas,Austin,7100 block of S I-35 Service Rd,1,0,0,0,0,,30.185626868849,-97.774348345472,2021,2,1,True,False
 1925528,2021-02-09,Texas,Austin,Rogge Ln and Manor Rd,0,1,0,0,0,,30.304587774921,-97.681312387537,2021,2,1,False,False
 1926559,2021-02-10,Texas,Austin,2900 block of Rogge Ln,0,0,1,0,0,,30.304609464853,-97.681221959975,2021,2,0,False,False
@@ -395,8 +395,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2023532,2021-06-03,Texas,Austin,2015 E Riverside Dr,0,1,0,0,0,,30.240909595478,-97.727749314746,2021,6,1,False,False
 2029842,2021-06-09,Texas,Austin,6201 Sneed Cove,0,1,0,0,0,,30.194582947736,-97.763636289816,2021,6,1,False,False
 2032310,2021-06-11,Texas,Austin,4123 Todd Ln,1,1,0,0,1,,30.211632645699,-97.737300075229,2021,6,2,True,False
-2032220,2021-06-12,Texas,Austin,400 block of E 6th St,1,13,0,1,1,,30.267104793944,-97.739252520549,2021,6,14,True,True
 2032758,2021-06-12,Texas,Austin,1930 W Rundberg Ln,1,0,0,0,1,,30.373470913114,-97.718441791339,2021,6,1,True,False
+2032220,2021-06-12,Texas,Austin,400 block of E 6th St,1,13,0,1,1,,30.267104793944,-97.739252520549,2021,6,14,True,True
 2033520,2021-06-13,Texas,Austin,Jollyville Rd,0,0,0,1,0,,,,2021,6,0,False,False
 2033522,2021-06-13,Texas,Austin,4211 Todd Ln,0,2,0,0,2,,30.211154222407,-97.737606686913,2021,6,2,False,False
 2033518,2021-06-13,Texas,Austin,Howard Ln,0,1,0,0,0,,,,2021,6,1,False,False
@@ -410,8 +410,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2052990,2021-07-04,Texas,Austin,9971 Quail Blvd,0,2,0,0,0,,30.370839940203,-97.699819596944,2021,7,2,False,False
 2054830,2021-07-05,Texas,Austin,6400 block of Springdale Rd,0,1,0,0,0,,30.307301209444,-97.669724550215,2021,7,1,False,False
 2053423,2021-07-05,Texas,Austin,400 block of E 6th St,0,2,0,0,0,,30.267104793944,-97.739252520549,2021,7,2,False,False
-2055679,2021-07-06,Texas,Austin,1500 Reagan Hill Dr,0,1,0,0,0,,30.326582995057,-97.68992513213,2021,7,1,False,False
 2055594,2021-07-06,Texas,Austin,7100 N Interstate Hwy 35,0,3,0,0,0,,30.332327668492,-97.704965159244,2021,7,3,False,False
+2055679,2021-07-06,Texas,Austin,1500 Reagan Hill Dr,0,1,0,0,0,,30.326582995057,-97.68992513213,2021,7,1,False,False
 2056695,2021-07-07,Texas,Austin,8305 Swallow Ct,1,0,0,0,2,,30.35263314079,-97.708238565187,2021,7,1,True,False
 2059473,2021-07-09,Texas,Austin,5211 Cameron Rd,0,2,0,0,0,,30.310707288213,-97.707940167136,2021,7,2,False,False
 2060857,2021-07-12,Texas,Austin,10200 block of Missel Thrush Dr,1,0,0,0,1,,30.45190714501,-97.799198551017,2021,7,1,True,False
@@ -594,8 +594,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2390941,2022-08-17,Texas,Austin,E Powell Ln and Georgian Dr,0,2,0,0,0,,30.347553767294,-97.703191380014,2022,8,2,False,False
 2392989,2022-08-19,Texas,Austin,11919 Menchaca Rd,1,0,0,0,0,,30.145323991831,-97.832985362808,2022,8,1,True,False
 2397088,2022-08-19,Texas,Austin,13212 N Lamar Blvd,0,0,0,0,1,,30.417340140391,-97.675856048266,2022,8,0,False,False
-2397657,2022-08-25,Texas,Austin,2200 block of Barton Springs Rd,1,0,0,0,0,,30.266146550896,-97.768732083254,2022,8,1,True,False
 2398257,2022-08-25,Texas,Austin,2600 block of E 7th St,0,1,0,0,1,,30.260821997259,-97.712654788273,2022,8,1,False,False
+2397657,2022-08-25,Texas,Austin,2200 block of Barton Springs Rd,1,0,0,0,0,,30.266146550896,-97.768732083254,2022,8,1,True,False
 2402209,2022-08-27,Texas,Austin,S IH-35 SVRD NB and E Oltorf St,0,1,0,0,1,,,,2022,8,1,False,False
 2403730,2022-08-30,Texas,Austin,7100 block of Wood Hollow Dr,0,1,0,0,1,,30.353544438682,-97.753163618725,2022,8,1,False,False
 2405725,2022-09-02,Texas,Austin,S Congress Ave and Eberhart Ln,0,1,0,0,1,,30.197028799486,-97.777121868856,2022,9,1,False,False
@@ -608,8 +608,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2422046,2022-09-23,Texas,Austin,1800 block of Brassie St,0,0,1,0,0,,30.227115082091,-97.703926130412,2022,9,0,False,False
 2423167,2022-09-24,Texas,Austin,8885 Research Blvd,0,2,0,0,0,,30.370469867475,-97.719761074156,2022,9,2,False,False
 2429883,2022-09-30,Texas,Austin,1201 Payton Gin Rd,0,0,0,0,1,,30.360520504353,-97.706184802352,2022,9,0,False,False
-2428793,2022-10-02,Texas,Austin,700 block of Neches St,0,1,0,0,0,,30.267768980635,-97.737960468395,2022,10,1,False,False
 2428776,2022-10-02,Texas,Austin,3811 E 12th St,0,2,0,0,0,,30.278325812428,-97.690699567804,2022,10,2,False,False
+2428793,2022-10-02,Texas,Austin,700 block of Neches St,0,1,0,0,0,,30.267768980635,-97.737960468395,2022,10,1,False,False
 2431349,2022-10-05,Texas,Austin,5545 N I-35 service road,0,1,0,0,0,,30.314581462532,-97.707571906929,2022,10,1,False,False
 2438151,2022-10-15,Texas,Austin,600 block of Trinity St,0,1,0,0,0,,30.2671400115,-97.739375539849,2022,10,1,False,False
 2442937,2022-10-21,Texas,Austin,6600 Ed Bluestein Blvd,1,0,0,0,0,,,,2022,10,1,True,False
@@ -625,8 +625,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 2455429,2022-11-08,Texas,Austin,5423 Cameron Rd,0,1,0,0,0,,30.312231898012,-97.705911815142,2022,11,1,False,False
 2458351,2022-11-11,Texas,Austin,1161 Harvey St,0,1,0,0,0,,30.27508696755,-97.702243808872,2022,11,1,False,False
 2460101,2022-11-15,Texas,Austin,2301 S 3rd St,1,0,0,0,1,,30.244102793972,-97.761239149399,2022,11,1,True,False
-2463109,2022-11-19,Texas,Austin,9010 Galewood Dr,0,1,0,0,0,,30.367218811503,-97.715255493316,2022,11,1,False,False
 2463120,2022-11-19,Texas,Austin,1512 Arial Dr,0,1,0,0,0,,30.392360486882,-97.650206900901,2022,11,1,False,False
+2463109,2022-11-19,Texas,Austin,9010 Galewood Dr,0,1,0,0,0,,30.367218811503,-97.715255493316,2022,11,1,False,False
 2469186,2022-11-27,Texas,Austin,3701 N I-35 Service Rd,0,1,0,0,0,,30.294057971997,-97.719752440683,2022,11,1,False,False
 2469656,2022-11-28,Texas,Austin,8000 block of View Ridge Dr,1,0,0,0,0,,,,2022,11,1,True,False
 2471084,2022-11-29,Texas,Austin,3811 E 12th St,0,1,0,0,0,,30.278325812428,-97.690699567804,2022,11,1,False,False
@@ -826,9 +826,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3050631,2024-10-17,Texas,Austin,2800 block of Wells Branch Pkwy,1,0,0,0,2,,30.441829003155,-97.689664421873,2024,10,1,True,False
 3053182,2024-10-21,Texas,Austin,1501 E Howard Ln,1,0,0,0,1,,30.404140227196,-97.639822233093,2024,10,1,True,False
 3061561,2024-11-01,Texas,Austin,900 E Braker Ln,1,0,0,1,1,,30.376178408511,-97.673900707869,2024,11,1,True,False
+3071028,2024-11-07,Texas,Austin,2600 block of Rosewood Ave,1,0,0,0,3,,30.272434376836,-97.707679920861,2024,11,1,True,False
 3067411,2024-11-07,Texas,Austin,6400 E US-290,1,0,0,0,0,,30.23493105115,-97.862071847095,2024,11,1,True,False
 3066196,2024-11-07,Texas,Austin,9501 Ranch Rd 620 N,0,0,1,0,0,,,,2024,11,0,False,False
-3071028,2024-11-07,Texas,Austin,2600 block of Rosewood Ave,1,0,0,0,3,,30.272434376836,-97.707679920861,2024,11,1,True,False
 3067362,2024-11-08,Texas,Austin,2030 E Oltorf St,0,1,0,0,0,,30.230887280826,-97.733278502644,2024,11,1,False,False
 3072477,2024-11-15,Texas,Austin,8426 Goldfinch Ct,1,0,0,0,1,,30.354202914889,-97.708234688874,2024,11,1,True,False
 3073643,2024-11-16,Texas,Austin,1934 Rutland Dr,1,0,0,0,1,,30.379320080607,-97.713035957216,2024,11,1,True,False
@@ -840,8 +840,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3093604,2024-12-13,Texas,Austin,513 Thrasher Ln,1,0,0,0,2,,30.238674154886,-97.692704173952,2024,12,1,True,False
 3100212,2024-12-21,Texas,Austin,2504 Huntwick Dr,1,0,0,0,1,,30.225610732726,-97.726928235911,2024,12,1,True,False
 3102905,2024-12-21,Texas,Austin,Shadowview Dr,0,2,0,0,1,,,,2024,12,2,False,False
-3106554,2025-01-01,Texas,Austin,Woodland Oaks Ct,0,1,0,0,0,,,,2025,1,1,False,False
 3107659,2025-01-01,Texas,Austin,4602 E Stassney Ln,0,1,0,0,0,,30.193985959893,-97.745959119726,2025,1,1,False,False
+3106554,2025-01-01,Texas,Austin,Woodland Oaks Ct,0,1,0,0,0,,,,2025,1,1,False,False
 3116590,2025-01-02,Texas,Austin,5700 block of Manor Rd,1,0,0,0,1,,30.304665882239,-97.681337360836,2025,1,1,True,False
 3118826,2025-01-18,Texas,Austin,717 E 7th St,1,0,0,0,1,,30.266991091922,-97.73551485555,2025,1,1,True,False
 3123103,2025-01-19,Texas,Austin,900 E Braker Ln,0,1,0,0,0,,30.376178408511,-97.673900707869,2025,1,1,False,False
@@ -903,9 +903,9 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3307747,2025-09-13,Texas,Austin,1430 Frontier Valley Dr,1,0,0,0,0,,,,2025,9,1,True,False
 3316712,2025-09-25,Texas,Austin,15450 FM 1325,0,1,0,0,0,,,,2025,9,1,False,False
 3326120,2025-10-06,Texas,Austin,8215 Research Blvd,1,0,0,0,3,,30.354457063907,-97.714601886717,2025,10,1,True,False
+3334096,2025-10-12,Texas,Austin,9200 block of Parkfield Dr,0,0,0,1,1,,30.365820548734,-97.707344183007,2025,10,0,False,False
 3329370,2025-10-12,Texas,Austin,N Creek Dr and E Rundberg Ln,0,1,0,0,0,,30.360063764428,-97.691783882248,2025,10,1,False,False
 3330044,2025-10-12,Texas,Austin,1822 Rutland Dr,1,0,0,0,1,,30.378142149977,-97.710675207806,2025,10,1,True,False
-3334096,2025-10-12,Texas,Austin,9200 block of Parkfield Dr,0,0,0,1,1,,30.365820548734,-97.707344183007,2025,10,0,False,False
 3339577,2025-10-23,Texas,Austin,1137 Gunter St,0,1,0,0,0,,30.269827765517,-97.696522715756,2025,10,1,False,False
 3339567,2025-10-23,Texas,Austin,Springdale Rd and Alf Ave,0,1,0,0,0,,30.268803782382,-97.693489386227,2025,10,1,False,False
 3341189,2025-10-25,Texas,Austin,710 W Cesar Chavez St,0,1,0,0,1,,30.265389651982,-97.75132345699,2025,10,1,False,False
@@ -918,8 +918,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3378609,2025-12-17,Texas,Austin,11900 S I-35 Frontage Rd,1,0,0,0,1,,30.125590752421,-97.802201029963,2025,12,1,True,False
 3381703,2025-12-22,Texas,Austin,10400 block of O'Rourk Ln,2,0,0,0,0,,30.19455730321,-97.889149977391,2025,12,2,True,False
 3385835,2025-12-29,Texas,Austin,700 block of W William Cannon Dr,1,0,0,0,0,,30.197268518328,-97.787795387395,2025,12,1,True,False
-3388167,2026-01-01,Texas,Austin,7801 N Lamar Blvd,1,0,0,0,1,,30.345180121387,-97.713744177719,2026,1,1,True,False
 3387749,2026-01-01,Texas,Austin,10505 S I-35 Frontage Rd,0,2,0,0,0,,30.149595782176,-97.792035712818,2026,1,2,False,False
+3388167,2026-01-01,Texas,Austin,7801 N Lamar Blvd,1,0,0,0,1,,30.345180121387,-97.713744177719,2026,1,1,True,False
 3388599,2026-01-03,Texas,Austin,8900 block of Brushy Gate Cove,2,0,0,0,1,,30.506037016687,-97.741364847028,2026,1,2,True,False
 3388587,2026-01-04,Texas,Austin,9515 N Lamar Blvd,1,0,0,0,1,,30.364896159592,-97.695907092733,2026,1,1,True,False
 3392478,2026-01-05,Texas,Austin,68 East Ave,1,0,0,0,1,,30.257751887093,-97.73812994645,2026,1,1,True,False
@@ -948,8 +948,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3447095,2026-04-10,Texas,Austin,5012 E 7th St,1,2,0,0,1,,30.253881919519,-97.698278239314,2026,4,3,True,False
 3449813,2026-04-14,Texas,Austin,3335 Caseybridge Ct,0,1,0,0,0,,,,2026,4,1,False,False
 3457354,2026-04-26,Texas,Austin,2000 E 12th St,0,6,0,1,2,,30.273983738714,-97.718827280169,2026,4,6,False,True
-3465531,2026-05-08,Texas,Austin,Wallace Dr and Gardenridge Hollow,1,0,0,0,1,,30.371034765839,-97.789330357443,2026,5,1,True,False
 3468736,2026-05-08,Texas,Austin,9106 N Interstate Hwy 35 #243,1,0,0,0,1,,,,2026,5,1,True,False
+3465531,2026-05-08,Texas,Austin,Wallace Dr and Gardenridge Hollow,1,0,0,0,1,,30.371034765839,-97.789330357443,2026,5,1,True,False
 3465317,2026-05-09,Texas,Austin,9207 N Lamar Blvd,1,0,0,0,0,,30.361198925839,-97.697964626381,2026,5,1,True,False
 3470085,2026-05-17,Texas,Austin,7409 Janes Ranch Rd,0,4,0,0,3,,30.16126371935,-97.731671928982,2026,5,4,False,True
 3494625,2026-05-24,Texas,Austin,9024 Northgate Blvd,0,0,0,2,0,,30.370007075875,-97.716928747173,2026,5,0,False,False
@@ -975,3 +975,8 @@ incident_id,date,state,city,address,killed,injured,Suspects Killed,Suspects Inju
 3551870,2026-09-23,Texas,Austin,3400 block of Shoreline Dr,2,0,0,0,1,,30.453351557822,-97.68145007059,2026,9,2,True,False
 3552626,2026-09-23,Texas,Austin,200 block of Virtus Bnd,0,0,1,0,0,,30.178200775295,-97.787622279706,2026,9,0,False,False
 3551862,2026-09-23,Texas,Austin,1054 Springdale Rd,1,0,0,0,1,,30.27085501992,-97.692234751848,2026,9,1,True,False
+3561132,2026-10-06,Texas,Austin,11300 block of Menchaca Rd,1,0,0,0,1,,30.157066197333,-97.833369700676,2026,10,1,True,False
+3566583,2026-10-16,Texas,Austin,W 10th St and N Lamar Blvd,0,1,0,0,0,,30.27501699863,-97.752278035153,2026,10,1,False,False
+3568314,2026-10-18,Texas,Austin,700 block of E 7th St,0,1,0,0,2,,30.267136993114,-97.735626168639,2026,10,1,False,False
+3571344,2026-10-25,Texas,Austin,3311 Esperanza Crossing,0,1,0,0,1,,30.400511797813,-97.726807650924,2026,10,1,False,False
+3574736,2026-10-31,Texas,Austin,419 E 6th St,0,1,0,0,0,,30.266950084038,-97.739114355514,2026,10,1,False,False
